@@ -33,18 +33,12 @@ r2=65
 #l is xy distance on grid between circle centers
 l=r2/math.sqrt(2)
 
-#derive the canvas size from our item layout
-
-#make_checkerboard(N,M)
-
-#now choose the nodes' colors
-#this could be any color choice algorithm
-#the below is a weighted random choice
-#interesting note is that the bias in the below is strongly against a colored node
-#at least when we start with a max connectedness score
 
 def draw_matrix(matrix,fname):
 	M,N=matrix.shape
+	#derive the canvas size from our item layout
+	#drawing a diagonal matrix, the circles have overlaps
+	##I like that -- it shows the white circles as subtractions
 	W=int(l*(N-1))+2*r
 	H=int(l*(M-1))+2*r
 	img=numpy.full((H,W,3),(255,255,255),numpy.uint8)
