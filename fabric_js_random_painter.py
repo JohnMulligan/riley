@@ -8,9 +8,9 @@ import math
 import messengers
 import json
 
-#M = int(sys.argv[1])
-#N = int(sys.argv[2])
-M,N=(13,17)
+M = int(sys.argv[1])
+N = int(sys.argv[2])
+
 
 #iterations = int(sys.argv[3])
 
@@ -118,7 +118,7 @@ O=P = len(DT[0])
 iterations=1
 
 for iteration in range(iterations):
-	rect_color_matrix = numpy.zeros((M,N))
+	rect_color_matrix = numpy.zeros((M,N),dtype=int)
 	
 	#pick colors for nodes
 	matrix_colors = {}
@@ -137,6 +137,9 @@ for iteration in range(iterations):
 	#now assign to diagonal matrix
 	
 	diag_color_matrix = messengers.transform(rect_color_matrix,RT,M,N,O,P)
+	
+	print(rect_color_matrix)
+	print(diag_color_matrix)
 	
 	#l is xy distance on grid between circle centers
 	xy_to_canvas(rect_color_matrix,'rect.html',l=r2/math.sqrt(2))
