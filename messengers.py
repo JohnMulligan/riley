@@ -151,6 +151,7 @@ def transform(input_matrix,transform_coords,A,B,I,J):
 			v=input_matrix[a][b]
 			i,j=transform_coords[a][b]
 			transformed[i][j]=v
+	print(transformed)
 	return transformed
 
 #all-purpose node-altering function

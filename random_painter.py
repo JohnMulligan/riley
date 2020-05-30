@@ -30,11 +30,9 @@ max_connectedness=2
 r=25
 #r2 is distance between circle centers
 r2=65
-#l is xy distance on grid between circle centers
-l=r2/math.sqrt(2)
 
 
-def draw_matrix(matrix,fname):
+def draw_matrix(matrix,fname,l):
 	M,N=matrix.shape
 	#derive the canvas size from our item layout
 	#drawing a diagonal matrix, the circles have overlaps
@@ -84,5 +82,6 @@ for iteration in range(iterations):
 	
 	diag_color_matrix = messengers.transform(rect_color_matrix,RT,M,N,O,P)
 	
-	draw_matrix(rect_color_matrix,'%d_rect.png' %iteration)
-	draw_matrix(diag_color_matrix,'%d_diag.png' %iteration)
+	#l is xy distance on grid between circle centers
+	draw_matrix(rect_color_matrix,'%d_rect.png' %iteration,l=r2/math.sqrt(2))
+	draw_matrix(diag_color_matrix,'%d_diag.png' %iteration,l=r2)

@@ -1,0 +1,10 @@
+var {{name}} = new fabric.Circle({
+  radius: {{r}}, fill: {{color}}, left: {{x}}, top: {{y}}
+});
+canvas.add({{name}});
+{{name}}.selection = false;
+{{name}}.set('selectable',false);
+{{name}}.on('mouseover',function() {
+{{name}}.set("fill",randomColor());
+canvas.renderAll()
+});

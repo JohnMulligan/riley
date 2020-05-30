@@ -1,0 +1,36 @@
+<html>
+<head>
+<script src="https://unpkg.com/fabric@4.0.0-beta.10/dist/fabric.js"></script>
+</head>
+
+
+<body>
+
+<canvas id="warpandweft" width="500" height="500"></canvas>
+</body>
+
+<script language="javascript">
+
+//example taken from http://fabricjs.com/fabric-intro-part-1#objects
+//var canvasEl = document.getElementById('warpandweft');
+//var ctx = canvasEl.getContext('2d');
+//ctx.fillRect(100,100,20,20)
+
+var canvas = new fabric.Canvas('warpandweft');
+var circle = new fabric.Circle({
+  radius: 20, fill: 'green', left: 100, top: 100
+});
+canvas.add(circle);
+canvas.selection = false;
+circle.set('selectable',false);
+circle.on('mouseover',function() {
+circle.set("fill","red");
+canvas.renderAll()
+});
+
+
+</script>
+
+
+
+</html>

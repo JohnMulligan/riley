@@ -1,0 +1,33 @@
+<html>
+<head>
+<script src="https://unpkg.com/fabric@4.0.0-beta.10/dist/fabric.js"></script>
+</head>
+
+
+<body>
+
+<canvas id="warpandweft" width={{W}} height={{H}}></canvas>
+</body>
+
+<script language="javascript">
+
+
+function randomColor() {
+const colors = {{colors_array}};
+color = colors[Math.floor(Math.random() * colors.length)];
+return color
+
+}
+
+
+
+
+
+var canvas = new fabric.Canvas('warpandweft');
+
+{{circles}}
+
+
+</script>
+
+</html>
