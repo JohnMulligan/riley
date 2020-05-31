@@ -49,4 +49,14 @@ general usage: python opencv_random_painter.py M N X
 example usage: python3 opencv_random_painter.py 5 7 10
 This generates X pairs of symmetrical matrices based on an MxN rectangular matrix, with .png output files. I'm currently using it to generate my Desktop background images.
 
+3) combined_opencv_fabricjs_random_painter.py
+This combines opencv_random_painter.py and fabric_js_random_painter.py
+Outputs:
+rectangular png
+diagonal png
+rectangular fabric.js html file
+diagonal fabric.js html file
+--Messengers uses a triadic color schema/palette. I only discovered this because opencv and fabric.js were producing differently-colored nodes that yet seemed to use the same palette. Drove me absolutely nuts until I realized that opencv uses BGR and fabric like everyone else uses RBG. But in the process, I punched one of the Riley colors into an RBG color wheel and the complementary colors that fell out of its triadic palette generator were basically the other two colors. This means that the transposition of coordinates in the color space between the two frameworks was undone by the rotational symmetry of Riley's palette. 
 
+
+ 
