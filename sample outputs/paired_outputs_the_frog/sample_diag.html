@@ -1,0 +1,353 @@
+<html>
+<head>
+<script src="https://unpkg.com/fabric@4.0.0-beta.10/dist/fabric.js"></script>
+</head>
+
+
+<body>
+
+<canvas id="warpandweft" width=505 height=505></canvas>
+</body>
+
+<script language="javascript">
+
+
+function randomColor() {
+const colors = ['rgb(170, 163, 195)', 'rgb(139, 193, 137)', 'rgb(218, 181, 171)', 'rgb(255, 255, 255)'];
+color = colors[Math.floor(Math.random() * colors.length)];
+return color
+
+}
+
+
+
+
+
+var canvas = new fabric.Canvas('warpandweft');
+
+
+var node_0_3 = new fabric.Circle({
+  radius: 25, fill: "rgb(139, 193, 137)", left: 195, top: 0
+});
+canvas.add(node_0_3);
+node_0_3.selection = false;
+node_0_3.set('selectable',false);
+node_0_3.on('mouseover',function() {
+node_0_3.set("fill",randomColor());
+canvas.renderAll()
+});
+var node_1_2 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 130, top: 65
+});
+canvas.add(node_1_2);
+node_1_2.selection = false;
+node_1_2.set('selectable',false);
+node_1_2.on('mouseover',function() {
+node_1_2.set("fill",randomColor());
+canvas.renderAll()
+});
+var node_1_3 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 195, top: 65
+});
+canvas.add(node_1_3);
+node_1_3.selection = false;
+node_1_3.set('selectable',false);
+node_1_3.on('mouseover',function() {
+node_1_3.set("fill",randomColor());
+canvas.renderAll()
+});
+var node_1_4 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 260, top: 65
+});
+canvas.add(node_1_4);
+node_1_4.selection = false;
+node_1_4.set('selectable',false);
+node_1_4.on('mouseover',function() {
+node_1_4.set("fill",randomColor());
+canvas.renderAll()
+});
+var node_2_1 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 65, top: 130
+});
+canvas.add(node_2_1);
+node_2_1.selection = false;
+node_2_1.set('selectable',false);
+node_2_1.on('mouseover',function() {
+node_2_1.set("fill",randomColor());
+canvas.renderAll()
+});
+var node_2_2 = new fabric.Circle({
+  radius: 25, fill: "rgb(170, 163, 195)", left: 130, top: 130
+});
+canvas.add(node_2_2);
+node_2_2.selection = false;
+node_2_2.set('selectable',false);
+node_2_2.on('mouseover',function() {
+node_2_2.set("fill",randomColor());
+canvas.renderAll()
+});
+var node_2_3 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 195, top: 130
+});
+canvas.add(node_2_3);
+node_2_3.selection = false;
+node_2_3.set('selectable',false);
+node_2_3.on('mouseover',function() {
+node_2_3.set("fill",randomColor());
+canvas.renderAll()
+});
+var node_2_4 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 260, top: 130
+});
+canvas.add(node_2_4);
+node_2_4.selection = false;
+node_2_4.set('selectable',false);
+node_2_4.on('mouseover',function() {
+node_2_4.set("fill",randomColor());
+canvas.renderAll()
+});
+var node_2_5 = new fabric.Circle({
+  radius: 25, fill: "rgb(139, 193, 137)", left: 325, top: 130
+});
+canvas.add(node_2_5);
+node_2_5.selection = false;
+node_2_5.set('selectable',false);
+node_2_5.on('mouseover',function() {
+node_2_5.set("fill",randomColor());
+canvas.renderAll()
+});
+var node_3_0 = new fabric.Circle({
+  radius: 25, fill: "rgb(139, 193, 137)", left: 0, top: 195
+});
+canvas.add(node_3_0);
+node_3_0.selection = false;
+node_3_0.set('selectable',false);
+node_3_0.on('mouseover',function() {
+node_3_0.set("fill",randomColor());
+canvas.renderAll()
+});
+var node_3_1 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 65, top: 195
+});
+canvas.add(node_3_1);
+node_3_1.selection = false;
+node_3_1.set('selectable',false);
+node_3_1.on('mouseover',function() {
+node_3_1.set("fill",randomColor());
+canvas.renderAll()
+});
+var node_3_2 = new fabric.Circle({
+  radius: 25, fill: "rgb(170, 163, 195)", left: 130, top: 195
+});
+canvas.add(node_3_2);
+node_3_2.selection = false;
+node_3_2.set('selectable',false);
+node_3_2.on('mouseover',function() {
+node_3_2.set("fill",randomColor());
+canvas.renderAll()
+});
+var node_3_3 = new fabric.Circle({
+  radius: 25, fill: "rgb(170, 163, 195)", left: 195, top: 195
+});
+canvas.add(node_3_3);
+node_3_3.selection = false;
+node_3_3.set('selectable',false);
+node_3_3.on('mouseover',function() {
+node_3_3.set("fill",randomColor());
+canvas.renderAll()
+});
+var node_3_4 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 260, top: 195
+});
+canvas.add(node_3_4);
+node_3_4.selection = false;
+node_3_4.set('selectable',false);
+node_3_4.on('mouseover',function() {
+node_3_4.set("fill",randomColor());
+canvas.renderAll()
+});
+var node_3_5 = new fabric.Circle({
+  radius: 25, fill: "rgb(170, 163, 195)", left: 325, top: 195
+});
+canvas.add(node_3_5);
+node_3_5.selection = false;
+node_3_5.set('selectable',false);
+node_3_5.on('mouseover',function() {
+node_3_5.set("fill",randomColor());
+canvas.renderAll()
+});
+var node_3_6 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 390, top: 195
+});
+canvas.add(node_3_6);
+node_3_6.selection = false;
+node_3_6.set('selectable',false);
+node_3_6.on('mouseover',function() {
+node_3_6.set("fill",randomColor());
+canvas.renderAll()
+});
+var node_4_1 = new fabric.Circle({
+  radius: 25, fill: "rgb(139, 193, 137)", left: 65, top: 260
+});
+canvas.add(node_4_1);
+node_4_1.selection = false;
+node_4_1.set('selectable',false);
+node_4_1.on('mouseover',function() {
+node_4_1.set("fill",randomColor());
+canvas.renderAll()
+});
+var node_4_2 = new fabric.Circle({
+  radius: 25, fill: "rgb(218, 181, 171)", left: 130, top: 260
+});
+canvas.add(node_4_2);
+node_4_2.selection = false;
+node_4_2.set('selectable',false);
+node_4_2.on('mouseover',function() {
+node_4_2.set("fill",randomColor());
+canvas.renderAll()
+});
+var node_4_3 = new fabric.Circle({
+  radius: 25, fill: "rgb(218, 181, 171)", left: 195, top: 260
+});
+canvas.add(node_4_3);
+node_4_3.selection = false;
+node_4_3.set('selectable',false);
+node_4_3.on('mouseover',function() {
+node_4_3.set("fill",randomColor());
+canvas.renderAll()
+});
+var node_4_4 = new fabric.Circle({
+  radius: 25, fill: "rgb(139, 193, 137)", left: 260, top: 260
+});
+canvas.add(node_4_4);
+node_4_4.selection = false;
+node_4_4.set('selectable',false);
+node_4_4.on('mouseover',function() {
+node_4_4.set("fill",randomColor());
+canvas.renderAll()
+});
+var node_4_5 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 325, top: 260
+});
+canvas.add(node_4_5);
+node_4_5.selection = false;
+node_4_5.set('selectable',false);
+node_4_5.on('mouseover',function() {
+node_4_5.set("fill",randomColor());
+canvas.renderAll()
+});
+var node_4_6 = new fabric.Circle({
+  radius: 25, fill: "rgb(218, 181, 171)", left: 390, top: 260
+});
+canvas.add(node_4_6);
+node_4_6.selection = false;
+node_4_6.set('selectable',false);
+node_4_6.on('mouseover',function() {
+node_4_6.set("fill",randomColor());
+canvas.renderAll()
+});
+var node_4_7 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 455, top: 260
+});
+canvas.add(node_4_7);
+node_4_7.selection = false;
+node_4_7.set('selectable',false);
+node_4_7.on('mouseover',function() {
+node_4_7.set("fill",randomColor());
+canvas.renderAll()
+});
+var node_5_2 = new fabric.Circle({
+  radius: 25, fill: "rgb(139, 193, 137)", left: 130, top: 325
+});
+canvas.add(node_5_2);
+node_5_2.selection = false;
+node_5_2.set('selectable',false);
+node_5_2.on('mouseover',function() {
+node_5_2.set("fill",randomColor());
+canvas.renderAll()
+});
+var node_5_3 = new fabric.Circle({
+  radius: 25, fill: "rgb(139, 193, 137)", left: 195, top: 325
+});
+canvas.add(node_5_3);
+node_5_3.selection = false;
+node_5_3.set('selectable',false);
+node_5_3.on('mouseover',function() {
+node_5_3.set("fill",randomColor());
+canvas.renderAll()
+});
+var node_5_4 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 260, top: 325
+});
+canvas.add(node_5_4);
+node_5_4.selection = false;
+node_5_4.set('selectable',false);
+node_5_4.on('mouseover',function() {
+node_5_4.set("fill",randomColor());
+canvas.renderAll()
+});
+var node_5_5 = new fabric.Circle({
+  radius: 25, fill: "rgb(170, 163, 195)", left: 325, top: 325
+});
+canvas.add(node_5_5);
+node_5_5.selection = false;
+node_5_5.set('selectable',false);
+node_5_5.on('mouseover',function() {
+node_5_5.set("fill",randomColor());
+canvas.renderAll()
+});
+var node_5_6 = new fabric.Circle({
+  radius: 25, fill: "rgb(139, 193, 137)", left: 390, top: 325
+});
+canvas.add(node_5_6);
+node_5_6.selection = false;
+node_5_6.set('selectable',false);
+node_5_6.on('mouseover',function() {
+node_5_6.set("fill",randomColor());
+canvas.renderAll()
+});
+var node_6_3 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 195, top: 390
+});
+canvas.add(node_6_3);
+node_6_3.selection = false;
+node_6_3.set('selectable',false);
+node_6_3.on('mouseover',function() {
+node_6_3.set("fill",randomColor());
+canvas.renderAll()
+});
+var node_6_4 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 260, top: 390
+});
+canvas.add(node_6_4);
+node_6_4.selection = false;
+node_6_4.set('selectable',false);
+node_6_4.on('mouseover',function() {
+node_6_4.set("fill",randomColor());
+canvas.renderAll()
+});
+var node_6_5 = new fabric.Circle({
+  radius: 25, fill: "rgb(218, 181, 171)", left: 325, top: 390
+});
+canvas.add(node_6_5);
+node_6_5.selection = false;
+node_6_5.set('selectable',false);
+node_6_5.on('mouseover',function() {
+node_6_5.set("fill",randomColor());
+canvas.renderAll()
+});
+var node_7_4 = new fabric.Circle({
+  radius: 25, fill: "rgb(139, 193, 137)", left: 260, top: 455
+});
+canvas.add(node_7_4);
+node_7_4.selection = false;
+node_7_4.set('selectable',false);
+node_7_4.on('mouseover',function() {
+node_7_4.set("fill",randomColor());
+canvas.renderAll()
+});
+
+
+</script>
+
+</html>

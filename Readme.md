@@ -57,6 +57,5 @@ diagonal png
 rectangular fabric.js html file
 diagonal fabric.js html file
 --Messengers uses a triadic color schema/palette. I only discovered this because opencv and fabric.js were producing differently-colored nodes that yet seemed to use the same palette. Drove me absolutely nuts until I realized that opencv uses BGR and fabric like everyone else uses RBG. But in the process, I punched one of the Riley colors into an RBG color wheel and the complementary colors that fell out of its triadic palette generator were basically the other two colors. This means that the transposition of coordinates in the color space between the two frameworks was undone by the rotational symmetry of Riley's palette. 
-
-
+--The fabric.js html file this generates is now more interactive. When you roll over a node, it randomly picks a new color. When you subsequently click, it changes to the next color in the palette. So you can technically paint a canvas but you have to allow for the fact that the interface is very sensitive and changes in response to your actions. You can navigate between nodes if you're trying not to change anything on the way to one of them.
  
