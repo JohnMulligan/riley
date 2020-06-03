@@ -6,7 +6,7 @@
 
 <body>
 
-<canvas id="warpandweft" width=1740 height=1740></canvas>
+<canvas id="warpandweft" width=1870 height=1870></canvas>
 </body>
 
 <script language="javascript">
@@ -33,46 +33,18 @@ return next_color
 var canvas = new fabric.Canvas('warpandweft');
 
 
-var node_0_10 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 650, top: 0
+var node_0_12 = new fabric.Circle({
+  radius: 25, fill: "rgb(139, 193, 137)", left: 780, top: 0
 });
-canvas.add(node_0_10);
-node_0_10.selection = false;
-node_0_10.set('selectable',false);
-node_0_10.on('mouseover',function() {
-node_0_10.set("fill",randomColor());
+canvas.add(node_0_12);
+node_0_12.selection = false;
+node_0_12.set('selectable',false);
+node_0_12.on('mouseover',function() {
+node_0_12.set("fill",randomColor());
 canvas.renderAll()
 });
-node_0_10.on('mousedown',function(e) {
-node_0_10.set("fill",nextColor(e));
-canvas.renderAll()
-})
-var node_1_9 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 585, top: 65
-});
-canvas.add(node_1_9);
-node_1_9.selection = false;
-node_1_9.set('selectable',false);
-node_1_9.on('mouseover',function() {
-node_1_9.set("fill",randomColor());
-canvas.renderAll()
-});
-node_1_9.on('mousedown',function(e) {
-node_1_9.set("fill",nextColor(e));
-canvas.renderAll()
-})
-var node_1_10 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 650, top: 65
-});
-canvas.add(node_1_10);
-node_1_10.selection = false;
-node_1_10.set('selectable',false);
-node_1_10.on('mouseover',function() {
-node_1_10.set("fill",randomColor());
-canvas.renderAll()
-});
-node_1_10.on('mousedown',function(e) {
-node_1_10.set("fill",nextColor(e));
+node_0_12.on('mousedown',function(e) {
+node_0_12.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_1_11 = new fabric.Circle({
@@ -89,32 +61,32 @@ node_1_11.on('mousedown',function(e) {
 node_1_11.set("fill",nextColor(e));
 canvas.renderAll()
 })
-var node_2_8 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 520, top: 130
+var node_1_12 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 780, top: 65
 });
-canvas.add(node_2_8);
-node_2_8.selection = false;
-node_2_8.set('selectable',false);
-node_2_8.on('mouseover',function() {
-node_2_8.set("fill",randomColor());
+canvas.add(node_1_12);
+node_1_12.selection = false;
+node_1_12.set('selectable',false);
+node_1_12.on('mouseover',function() {
+node_1_12.set("fill",randomColor());
 canvas.renderAll()
 });
-node_2_8.on('mousedown',function(e) {
-node_2_8.set("fill",nextColor(e));
+node_1_12.on('mousedown',function(e) {
+node_1_12.set("fill",nextColor(e));
 canvas.renderAll()
 })
-var node_2_9 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 585, top: 130
+var node_1_13 = new fabric.Circle({
+  radius: 25, fill: "rgb(170, 163, 195)", left: 845, top: 65
 });
-canvas.add(node_2_9);
-node_2_9.selection = false;
-node_2_9.set('selectable',false);
-node_2_9.on('mouseover',function() {
-node_2_9.set("fill",randomColor());
+canvas.add(node_1_13);
+node_1_13.selection = false;
+node_1_13.set('selectable',false);
+node_1_13.on('mouseover',function() {
+node_1_13.set("fill",randomColor());
 canvas.renderAll()
 });
-node_2_9.on('mousedown',function(e) {
-node_2_9.set("fill",nextColor(e));
+node_1_13.on('mousedown',function(e) {
+node_1_13.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_2_10 = new fabric.Circle({
@@ -132,7 +104,7 @@ node_2_10.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_2_11 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 715, top: 130
+  radius: 25, fill: "rgb(170, 163, 195)", left: 715, top: 130
 });
 canvas.add(node_2_11);
 node_2_11.selection = false;
@@ -159,36 +131,36 @@ node_2_12.on('mousedown',function(e) {
 node_2_12.set("fill",nextColor(e));
 canvas.renderAll()
 })
-var node_3_7 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 455, top: 195
+var node_2_13 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 845, top: 130
 });
-canvas.add(node_3_7);
-node_3_7.selection = false;
-node_3_7.set('selectable',false);
-node_3_7.on('mouseover',function() {
-node_3_7.set("fill",randomColor());
+canvas.add(node_2_13);
+node_2_13.selection = false;
+node_2_13.set('selectable',false);
+node_2_13.on('mouseover',function() {
+node_2_13.set("fill",randomColor());
 canvas.renderAll()
 });
-node_3_7.on('mousedown',function(e) {
-node_3_7.set("fill",nextColor(e));
+node_2_13.on('mousedown',function(e) {
+node_2_13.set("fill",nextColor(e));
 canvas.renderAll()
 })
-var node_3_8 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 520, top: 195
+var node_2_14 = new fabric.Circle({
+  radius: 25, fill: "rgb(139, 193, 137)", left: 910, top: 130
 });
-canvas.add(node_3_8);
-node_3_8.selection = false;
-node_3_8.set('selectable',false);
-node_3_8.on('mouseover',function() {
-node_3_8.set("fill",randomColor());
+canvas.add(node_2_14);
+node_2_14.selection = false;
+node_2_14.set('selectable',false);
+node_2_14.on('mouseover',function() {
+node_2_14.set("fill",randomColor());
 canvas.renderAll()
 });
-node_3_8.on('mousedown',function(e) {
-node_3_8.set("fill",nextColor(e));
+node_2_14.on('mousedown',function(e) {
+node_2_14.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_3_9 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 585, top: 195
+  radius: 25, fill: "rgb(255, 255, 255)", left: 585, top: 195
 });
 canvas.add(node_3_9);
 node_3_9.selection = false;
@@ -202,7 +174,7 @@ node_3_9.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_3_10 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 650, top: 195
+  radius: 25, fill: "rgb(255, 255, 255)", left: 650, top: 195
 });
 canvas.add(node_3_10);
 node_3_10.selection = false;
@@ -216,7 +188,7 @@ node_3_10.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_3_11 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 715, top: 195
+  radius: 25, fill: "rgb(255, 255, 255)", left: 715, top: 195
 });
 canvas.add(node_3_11);
 node_3_11.selection = false;
@@ -244,7 +216,7 @@ node_3_12.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_3_13 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 845, top: 195
+  radius: 25, fill: "rgb(139, 193, 137)", left: 845, top: 195
 });
 canvas.add(node_3_13);
 node_3_13.selection = false;
@@ -257,36 +229,50 @@ node_3_13.on('mousedown',function(e) {
 node_3_13.set("fill",nextColor(e));
 canvas.renderAll()
 })
-var node_4_6 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 390, top: 260
+var node_3_14 = new fabric.Circle({
+  radius: 25, fill: "rgb(170, 163, 195)", left: 910, top: 195
 });
-canvas.add(node_4_6);
-node_4_6.selection = false;
-node_4_6.set('selectable',false);
-node_4_6.on('mouseover',function() {
-node_4_6.set("fill",randomColor());
+canvas.add(node_3_14);
+node_3_14.selection = false;
+node_3_14.set('selectable',false);
+node_3_14.on('mouseover',function() {
+node_3_14.set("fill",randomColor());
 canvas.renderAll()
 });
-node_4_6.on('mousedown',function(e) {
-node_4_6.set("fill",nextColor(e));
+node_3_14.on('mousedown',function(e) {
+node_3_14.set("fill",nextColor(e));
 canvas.renderAll()
 })
-var node_4_7 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 455, top: 260
+var node_3_15 = new fabric.Circle({
+  radius: 25, fill: "rgb(139, 193, 137)", left: 975, top: 195
 });
-canvas.add(node_4_7);
-node_4_7.selection = false;
-node_4_7.set('selectable',false);
-node_4_7.on('mouseover',function() {
-node_4_7.set("fill",randomColor());
+canvas.add(node_3_15);
+node_3_15.selection = false;
+node_3_15.set('selectable',false);
+node_3_15.on('mouseover',function() {
+node_3_15.set("fill",randomColor());
 canvas.renderAll()
 });
-node_4_7.on('mousedown',function(e) {
-node_4_7.set("fill",nextColor(e));
+node_3_15.on('mousedown',function(e) {
+node_3_15.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_4_16 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1040, top: 260
+});
+canvas.add(node_4_16);
+node_4_16.selection = false;
+node_4_16.set('selectable',false);
+node_4_16.on('mouseover',function() {
+node_4_16.set("fill",randomColor());
+canvas.renderAll()
+});
+node_4_16.on('mousedown',function(e) {
+node_4_16.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_4_8 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 520, top: 260
+  radius: 25, fill: "rgb(139, 193, 137)", left: 520, top: 260
 });
 canvas.add(node_4_8);
 node_4_8.selection = false;
@@ -300,7 +286,7 @@ node_4_8.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_4_9 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 585, top: 260
+  radius: 25, fill: "rgb(255, 255, 255)", left: 585, top: 260
 });
 canvas.add(node_4_9);
 node_4_9.selection = false;
@@ -314,7 +300,7 @@ node_4_9.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_4_10 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 650, top: 260
+  radius: 25, fill: "rgb(139, 193, 137)", left: 650, top: 260
 });
 canvas.add(node_4_10);
 node_4_10.selection = false;
@@ -342,7 +328,7 @@ node_4_11.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_4_12 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 780, top: 260
+  radius: 25, fill: "rgb(170, 163, 195)", left: 780, top: 260
 });
 canvas.add(node_4_12);
 node_4_12.selection = false;
@@ -356,7 +342,7 @@ node_4_12.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_4_13 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 845, top: 260
+  radius: 25, fill: "rgb(255, 255, 255)", left: 845, top: 260
 });
 canvas.add(node_4_13);
 node_4_13.selection = false;
@@ -370,7 +356,7 @@ node_4_13.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_4_14 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 910, top: 260
+  radius: 25, fill: "rgb(170, 163, 195)", left: 910, top: 260
 });
 canvas.add(node_4_14);
 node_4_14.selection = false;
@@ -383,36 +369,50 @@ node_4_14.on('mousedown',function(e) {
 node_4_14.set("fill",nextColor(e));
 canvas.renderAll()
 })
-var node_5_5 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 325, top: 325
+var node_4_15 = new fabric.Circle({
+  radius: 25, fill: "rgb(170, 163, 195)", left: 975, top: 260
 });
-canvas.add(node_5_5);
-node_5_5.selection = false;
-node_5_5.set('selectable',false);
-node_5_5.on('mouseover',function() {
-node_5_5.set("fill",randomColor());
+canvas.add(node_4_15);
+node_4_15.selection = false;
+node_4_15.set('selectable',false);
+node_4_15.on('mouseover',function() {
+node_4_15.set("fill",randomColor());
 canvas.renderAll()
 });
-node_5_5.on('mousedown',function(e) {
-node_5_5.set("fill",nextColor(e));
+node_4_15.on('mousedown',function(e) {
+node_4_15.set("fill",nextColor(e));
 canvas.renderAll()
 })
-var node_5_6 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 390, top: 325
+var node_5_16 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1040, top: 325
 });
-canvas.add(node_5_6);
-node_5_6.selection = false;
-node_5_6.set('selectable',false);
-node_5_6.on('mouseover',function() {
-node_5_6.set("fill",randomColor());
+canvas.add(node_5_16);
+node_5_16.selection = false;
+node_5_16.set('selectable',false);
+node_5_16.on('mouseover',function() {
+node_5_16.set("fill",randomColor());
 canvas.renderAll()
 });
-node_5_6.on('mousedown',function(e) {
-node_5_6.set("fill",nextColor(e));
+node_5_16.on('mousedown',function(e) {
+node_5_16.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_5_17 = new fabric.Circle({
+  radius: 25, fill: "rgb(170, 163, 195)", left: 1105, top: 325
+});
+canvas.add(node_5_17);
+node_5_17.selection = false;
+node_5_17.set('selectable',false);
+node_5_17.on('mouseover',function() {
+node_5_17.set("fill",randomColor());
+canvas.renderAll()
+});
+node_5_17.on('mousedown',function(e) {
+node_5_17.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_5_7 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 455, top: 325
+  radius: 25, fill: "rgb(218, 181, 171)", left: 455, top: 325
 });
 canvas.add(node_5_7);
 node_5_7.selection = false;
@@ -426,7 +426,7 @@ node_5_7.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_5_8 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 520, top: 325
+  radius: 25, fill: "rgb(218, 181, 171)", left: 520, top: 325
 });
 canvas.add(node_5_8);
 node_5_8.selection = false;
@@ -440,7 +440,7 @@ node_5_8.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_5_9 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 585, top: 325
+  radius: 25, fill: "rgb(255, 255, 255)", left: 585, top: 325
 });
 canvas.add(node_5_9);
 node_5_9.selection = false;
@@ -468,7 +468,7 @@ node_5_10.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_5_11 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 715, top: 325
+  radius: 25, fill: "rgb(139, 193, 137)", left: 715, top: 325
 });
 canvas.add(node_5_11);
 node_5_11.selection = false;
@@ -482,7 +482,7 @@ node_5_11.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_5_12 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 780, top: 325
+  radius: 25, fill: "rgb(218, 181, 171)", left: 780, top: 325
 });
 canvas.add(node_5_12);
 node_5_12.selection = false;
@@ -496,7 +496,7 @@ node_5_12.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_5_13 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 845, top: 325
+  radius: 25, fill: "rgb(139, 193, 137)", left: 845, top: 325
 });
 canvas.add(node_5_13);
 node_5_13.selection = false;
@@ -537,36 +537,8 @@ node_5_15.on('mousedown',function(e) {
 node_5_15.set("fill",nextColor(e));
 canvas.renderAll()
 })
-var node_6_4 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 260, top: 390
-});
-canvas.add(node_6_4);
-node_6_4.selection = false;
-node_6_4.set('selectable',false);
-node_6_4.on('mouseover',function() {
-node_6_4.set("fill",randomColor());
-canvas.renderAll()
-});
-node_6_4.on('mousedown',function(e) {
-node_6_4.set("fill",nextColor(e));
-canvas.renderAll()
-})
-var node_6_5 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 325, top: 390
-});
-canvas.add(node_6_5);
-node_6_5.selection = false;
-node_6_5.set('selectable',false);
-node_6_5.on('mouseover',function() {
-node_6_5.set("fill",randomColor());
-canvas.renderAll()
-});
-node_6_5.on('mousedown',function(e) {
-node_6_5.set("fill",nextColor(e));
-canvas.renderAll()
-})
 var node_6_6 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 390, top: 390
+  radius: 25, fill: "rgb(255, 255, 255)", left: 390, top: 390
 });
 canvas.add(node_6_6);
 node_6_6.selection = false;
@@ -622,7 +594,7 @@ node_6_9.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_6_10 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 650, top: 390
+  radius: 25, fill: "rgb(218, 181, 171)", left: 650, top: 390
 });
 canvas.add(node_6_10);
 node_6_10.selection = false;
@@ -636,7 +608,7 @@ node_6_10.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_6_11 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 715, top: 390
+  radius: 25, fill: "rgb(218, 181, 171)", left: 715, top: 390
 });
 canvas.add(node_6_11);
 node_6_11.selection = false;
@@ -650,7 +622,7 @@ node_6_11.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_6_12 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 780, top: 390
+  radius: 25, fill: "rgb(139, 193, 137)", left: 780, top: 390
 });
 canvas.add(node_6_12);
 node_6_12.selection = false;
@@ -664,7 +636,7 @@ node_6_12.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_6_13 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 845, top: 390
+  radius: 25, fill: "rgb(218, 181, 171)", left: 845, top: 390
 });
 canvas.add(node_6_13);
 node_6_13.selection = false;
@@ -719,36 +691,36 @@ node_6_16.on('mousedown',function(e) {
 node_6_16.set("fill",nextColor(e));
 canvas.renderAll()
 })
-var node_7_3 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 195, top: 455
+var node_6_17 = new fabric.Circle({
+  radius: 25, fill: "rgb(139, 193, 137)", left: 1105, top: 390
 });
-canvas.add(node_7_3);
-node_7_3.selection = false;
-node_7_3.set('selectable',false);
-node_7_3.on('mouseover',function() {
-node_7_3.set("fill",randomColor());
+canvas.add(node_6_17);
+node_6_17.selection = false;
+node_6_17.set('selectable',false);
+node_6_17.on('mouseover',function() {
+node_6_17.set("fill",randomColor());
 canvas.renderAll()
 });
-node_7_3.on('mousedown',function(e) {
-node_7_3.set("fill",nextColor(e));
+node_6_17.on('mousedown',function(e) {
+node_6_17.set("fill",nextColor(e));
 canvas.renderAll()
 })
-var node_7_4 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 260, top: 455
+var node_6_18 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1170, top: 390
 });
-canvas.add(node_7_4);
-node_7_4.selection = false;
-node_7_4.set('selectable',false);
-node_7_4.on('mouseover',function() {
-node_7_4.set("fill",randomColor());
+canvas.add(node_6_18);
+node_6_18.selection = false;
+node_6_18.set('selectable',false);
+node_6_18.on('mouseover',function() {
+node_6_18.set("fill",randomColor());
 canvas.renderAll()
 });
-node_7_4.on('mousedown',function(e) {
-node_7_4.set("fill",nextColor(e));
+node_6_18.on('mousedown',function(e) {
+node_6_18.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_7_5 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 325, top: 455
+  radius: 25, fill: "rgb(218, 181, 171)", left: 325, top: 455
 });
 canvas.add(node_7_5);
 node_7_5.selection = false;
@@ -762,7 +734,7 @@ node_7_5.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_7_6 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 390, top: 455
+  radius: 25, fill: "rgb(255, 255, 255)", left: 390, top: 455
 });
 canvas.add(node_7_6);
 node_7_6.selection = false;
@@ -776,7 +748,7 @@ node_7_6.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_7_7 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 455, top: 455
+  radius: 25, fill: "rgb(255, 255, 255)", left: 455, top: 455
 });
 canvas.add(node_7_7);
 node_7_7.selection = false;
@@ -790,7 +762,7 @@ node_7_7.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_7_8 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 520, top: 455
+  radius: 25, fill: "rgb(218, 181, 171)", left: 520, top: 455
 });
 canvas.add(node_7_8);
 node_7_8.selection = false;
@@ -804,7 +776,7 @@ node_7_8.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_7_9 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 585, top: 455
+  radius: 25, fill: "rgb(255, 255, 255)", left: 585, top: 455
 });
 canvas.add(node_7_9);
 node_7_9.selection = false;
@@ -818,7 +790,7 @@ node_7_9.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_7_10 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 650, top: 455
+  radius: 25, fill: "rgb(170, 163, 195)", left: 650, top: 455
 });
 canvas.add(node_7_10);
 node_7_10.selection = false;
@@ -846,7 +818,7 @@ node_7_11.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_7_12 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 780, top: 455
+  radius: 25, fill: "rgb(139, 193, 137)", left: 780, top: 455
 });
 canvas.add(node_7_12);
 node_7_12.selection = false;
@@ -860,7 +832,7 @@ node_7_12.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_7_13 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 845, top: 455
+  radius: 25, fill: "rgb(255, 255, 255)", left: 845, top: 455
 });
 canvas.add(node_7_13);
 node_7_13.selection = false;
@@ -874,7 +846,7 @@ node_7_13.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_7_14 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 910, top: 455
+  radius: 25, fill: "rgb(139, 193, 137)", left: 910, top: 455
 });
 canvas.add(node_7_14);
 node_7_14.selection = false;
@@ -888,7 +860,7 @@ node_7_14.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_7_15 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 975, top: 455
+  radius: 25, fill: "rgb(170, 163, 195)", left: 975, top: 455
 });
 canvas.add(node_7_15);
 node_7_15.selection = false;
@@ -902,7 +874,7 @@ node_7_15.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_7_16 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 1040, top: 455
+  radius: 25, fill: "rgb(170, 163, 195)", left: 1040, top: 455
 });
 canvas.add(node_7_16);
 node_7_16.selection = false;
@@ -929,36 +901,36 @@ node_7_17.on('mousedown',function(e) {
 node_7_17.set("fill",nextColor(e));
 canvas.renderAll()
 })
-var node_8_2 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 130, top: 520
+var node_7_18 = new fabric.Circle({
+  radius: 25, fill: "rgb(218, 181, 171)", left: 1170, top: 455
 });
-canvas.add(node_8_2);
-node_8_2.selection = false;
-node_8_2.set('selectable',false);
-node_8_2.on('mouseover',function() {
-node_8_2.set("fill",randomColor());
+canvas.add(node_7_18);
+node_7_18.selection = false;
+node_7_18.set('selectable',false);
+node_7_18.on('mouseover',function() {
+node_7_18.set("fill",randomColor());
 canvas.renderAll()
 });
-node_8_2.on('mousedown',function(e) {
-node_8_2.set("fill",nextColor(e));
+node_7_18.on('mousedown',function(e) {
+node_7_18.set("fill",nextColor(e));
 canvas.renderAll()
 })
-var node_8_3 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 195, top: 520
+var node_7_19 = new fabric.Circle({
+  radius: 25, fill: "rgb(170, 163, 195)", left: 1235, top: 455
 });
-canvas.add(node_8_3);
-node_8_3.selection = false;
-node_8_3.set('selectable',false);
-node_8_3.on('mouseover',function() {
-node_8_3.set("fill",randomColor());
+canvas.add(node_7_19);
+node_7_19.selection = false;
+node_7_19.set('selectable',false);
+node_7_19.on('mouseover',function() {
+node_7_19.set("fill",randomColor());
 canvas.renderAll()
 });
-node_8_3.on('mousedown',function(e) {
-node_8_3.set("fill",nextColor(e));
+node_7_19.on('mousedown',function(e) {
+node_7_19.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_8_4 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 260, top: 520
+  radius: 25, fill: "rgb(218, 181, 171)", left: 260, top: 520
 });
 canvas.add(node_8_4);
 node_8_4.selection = false;
@@ -972,7 +944,7 @@ node_8_4.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_8_5 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 325, top: 520
+  radius: 25, fill: "rgb(139, 193, 137)", left: 325, top: 520
 });
 canvas.add(node_8_5);
 node_8_5.selection = false;
@@ -1014,7 +986,7 @@ node_8_7.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_8_8 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 520, top: 520
+  radius: 25, fill: "rgb(218, 181, 171)", left: 520, top: 520
 });
 canvas.add(node_8_8);
 node_8_8.selection = false;
@@ -1028,7 +1000,7 @@ node_8_8.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_8_9 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 585, top: 520
+  radius: 25, fill: "rgb(218, 181, 171)", left: 585, top: 520
 });
 canvas.add(node_8_9);
 node_8_9.selection = false;
@@ -1042,7 +1014,7 @@ node_8_9.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_8_10 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 650, top: 520
+  radius: 25, fill: "rgb(218, 181, 171)", left: 650, top: 520
 });
 canvas.add(node_8_10);
 node_8_10.selection = false;
@@ -1070,7 +1042,7 @@ node_8_11.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_8_12 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 780, top: 520
+  radius: 25, fill: "rgb(139, 193, 137)", left: 780, top: 520
 });
 canvas.add(node_8_12);
 node_8_12.selection = false;
@@ -1084,7 +1056,7 @@ node_8_12.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_8_13 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 845, top: 520
+  radius: 25, fill: "rgb(255, 255, 255)", left: 845, top: 520
 });
 canvas.add(node_8_13);
 node_8_13.selection = false;
@@ -1098,7 +1070,7 @@ node_8_13.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_8_14 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 910, top: 520
+  radius: 25, fill: "rgb(139, 193, 137)", left: 910, top: 520
 });
 canvas.add(node_8_14);
 node_8_14.selection = false;
@@ -1126,7 +1098,7 @@ node_8_15.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_8_16 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 1040, top: 520
+  radius: 25, fill: "rgb(170, 163, 195)", left: 1040, top: 520
 });
 canvas.add(node_8_16);
 node_8_16.selection = false;
@@ -1140,7 +1112,7 @@ node_8_16.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_8_17 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 1105, top: 520
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1105, top: 520
 });
 canvas.add(node_8_17);
 node_8_17.selection = false;
@@ -1154,7 +1126,7 @@ node_8_17.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_8_18 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 1170, top: 520
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1170, top: 520
 });
 canvas.add(node_8_18);
 node_8_18.selection = false;
@@ -1167,32 +1139,32 @@ node_8_18.on('mousedown',function(e) {
 node_8_18.set("fill",nextColor(e));
 canvas.renderAll()
 })
-var node_9_1 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 65, top: 585
+var node_8_19 = new fabric.Circle({
+  radius: 25, fill: "rgb(139, 193, 137)", left: 1235, top: 520
 });
-canvas.add(node_9_1);
-node_9_1.selection = false;
-node_9_1.set('selectable',false);
-node_9_1.on('mouseover',function() {
-node_9_1.set("fill",randomColor());
+canvas.add(node_8_19);
+node_8_19.selection = false;
+node_8_19.set('selectable',false);
+node_8_19.on('mouseover',function() {
+node_8_19.set("fill",randomColor());
 canvas.renderAll()
 });
-node_9_1.on('mousedown',function(e) {
-node_9_1.set("fill",nextColor(e));
+node_8_19.on('mousedown',function(e) {
+node_8_19.set("fill",nextColor(e));
 canvas.renderAll()
 })
-var node_9_2 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 130, top: 585
+var node_8_20 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1300, top: 520
 });
-canvas.add(node_9_2);
-node_9_2.selection = false;
-node_9_2.set('selectable',false);
-node_9_2.on('mouseover',function() {
-node_9_2.set("fill",randomColor());
+canvas.add(node_8_20);
+node_8_20.selection = false;
+node_8_20.set('selectable',false);
+node_8_20.on('mouseover',function() {
+node_8_20.set("fill",randomColor());
 canvas.renderAll()
 });
-node_9_2.on('mousedown',function(e) {
-node_9_2.set("fill",nextColor(e));
+node_8_20.on('mousedown',function(e) {
+node_8_20.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_9_3 = new fabric.Circle({
@@ -1210,7 +1182,7 @@ node_9_3.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_9_4 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 260, top: 585
+  radius: 25, fill: "rgb(170, 163, 195)", left: 260, top: 585
 });
 canvas.add(node_9_4);
 node_9_4.selection = false;
@@ -1224,7 +1196,7 @@ node_9_4.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_9_5 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 325, top: 585
+  radius: 25, fill: "rgb(139, 193, 137)", left: 325, top: 585
 });
 canvas.add(node_9_5);
 node_9_5.selection = false;
@@ -1252,7 +1224,7 @@ node_9_6.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_9_7 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 455, top: 585
+  radius: 25, fill: "rgb(170, 163, 195)", left: 455, top: 585
 });
 canvas.add(node_9_7);
 node_9_7.selection = false;
@@ -1294,7 +1266,7 @@ node_9_9.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_9_10 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 650, top: 585
+  radius: 25, fill: "rgb(255, 255, 255)", left: 650, top: 585
 });
 canvas.add(node_9_10);
 node_9_10.selection = false;
@@ -1308,7 +1280,7 @@ node_9_10.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_9_11 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 715, top: 585
+  radius: 25, fill: "rgb(139, 193, 137)", left: 715, top: 585
 });
 canvas.add(node_9_11);
 node_9_11.selection = false;
@@ -1336,7 +1308,7 @@ node_9_12.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_9_13 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 845, top: 585
+  radius: 25, fill: "rgb(170, 163, 195)", left: 845, top: 585
 });
 canvas.add(node_9_13);
 node_9_13.selection = false;
@@ -1350,7 +1322,7 @@ node_9_13.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_9_14 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 910, top: 585
+  radius: 25, fill: "rgb(139, 193, 137)", left: 910, top: 585
 });
 canvas.add(node_9_14);
 node_9_14.selection = false;
@@ -1364,7 +1336,7 @@ node_9_14.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_9_15 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 975, top: 585
+  radius: 25, fill: "rgb(170, 163, 195)", left: 975, top: 585
 });
 canvas.add(node_9_15);
 node_9_15.selection = false;
@@ -1406,7 +1378,7 @@ node_9_17.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_9_18 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 1170, top: 585
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1170, top: 585
 });
 canvas.add(node_9_18);
 node_9_18.selection = false;
@@ -1420,7 +1392,7 @@ node_9_18.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_9_19 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 1235, top: 585
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1235, top: 585
 });
 canvas.add(node_9_19);
 node_9_19.selection = false;
@@ -1433,36 +1405,36 @@ node_9_19.on('mousedown',function(e) {
 node_9_19.set("fill",nextColor(e));
 canvas.renderAll()
 })
-var node_10_0 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 0, top: 650
+var node_9_20 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1300, top: 585
 });
-canvas.add(node_10_0);
-node_10_0.selection = false;
-node_10_0.set('selectable',false);
-node_10_0.on('mouseover',function() {
-node_10_0.set("fill",randomColor());
+canvas.add(node_9_20);
+node_9_20.selection = false;
+node_9_20.set('selectable',false);
+node_9_20.on('mouseover',function() {
+node_9_20.set("fill",randomColor());
 canvas.renderAll()
 });
-node_10_0.on('mousedown',function(e) {
-node_10_0.set("fill",nextColor(e));
+node_9_20.on('mousedown',function(e) {
+node_9_20.set("fill",nextColor(e));
 canvas.renderAll()
 })
-var node_10_1 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 65, top: 650
+var node_9_21 = new fabric.Circle({
+  radius: 25, fill: "rgb(170, 163, 195)", left: 1365, top: 585
 });
-canvas.add(node_10_1);
-node_10_1.selection = false;
-node_10_1.set('selectable',false);
-node_10_1.on('mouseover',function() {
-node_10_1.set("fill",randomColor());
+canvas.add(node_9_21);
+node_9_21.selection = false;
+node_9_21.set('selectable',false);
+node_9_21.on('mouseover',function() {
+node_9_21.set("fill",randomColor());
 canvas.renderAll()
 });
-node_10_1.on('mousedown',function(e) {
-node_10_1.set("fill",nextColor(e));
+node_9_21.on('mousedown',function(e) {
+node_9_21.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_10_2 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 130, top: 650
+  radius: 25, fill: "rgb(255, 255, 255)", left: 130, top: 650
 });
 canvas.add(node_10_2);
 node_10_2.selection = false;
@@ -1476,7 +1448,7 @@ node_10_2.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_10_3 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 195, top: 650
+  radius: 25, fill: "rgb(255, 255, 255)", left: 195, top: 650
 });
 canvas.add(node_10_3);
 node_10_3.selection = false;
@@ -1490,7 +1462,7 @@ node_10_3.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_10_4 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 260, top: 650
+  radius: 25, fill: "rgb(218, 181, 171)", left: 260, top: 650
 });
 canvas.add(node_10_4);
 node_10_4.selection = false;
@@ -1504,7 +1476,7 @@ node_10_4.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_10_5 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 325, top: 650
+  radius: 25, fill: "rgb(255, 255, 255)", left: 325, top: 650
 });
 canvas.add(node_10_5);
 node_10_5.selection = false;
@@ -1518,7 +1490,7 @@ node_10_5.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_10_6 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 390, top: 650
+  radius: 25, fill: "rgb(170, 163, 195)", left: 390, top: 650
 });
 canvas.add(node_10_6);
 node_10_6.selection = false;
@@ -1532,7 +1504,7 @@ node_10_6.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_10_7 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 455, top: 650
+  radius: 25, fill: "rgb(139, 193, 137)", left: 455, top: 650
 });
 canvas.add(node_10_7);
 node_10_7.selection = false;
@@ -1546,7 +1518,7 @@ node_10_7.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_10_8 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 520, top: 650
+  radius: 25, fill: "rgb(218, 181, 171)", left: 520, top: 650
 });
 canvas.add(node_10_8);
 node_10_8.selection = false;
@@ -1560,7 +1532,7 @@ node_10_8.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_10_9 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 585, top: 650
+  radius: 25, fill: "rgb(170, 163, 195)", left: 585, top: 650
 });
 canvas.add(node_10_9);
 node_10_9.selection = false;
@@ -1574,7 +1546,7 @@ node_10_9.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_10_10 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 650, top: 650
+  radius: 25, fill: "rgb(170, 163, 195)", left: 650, top: 650
 });
 canvas.add(node_10_10);
 node_10_10.selection = false;
@@ -1588,7 +1560,7 @@ node_10_10.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_10_11 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 715, top: 650
+  radius: 25, fill: "rgb(255, 255, 255)", left: 715, top: 650
 });
 canvas.add(node_10_11);
 node_10_11.selection = false;
@@ -1602,7 +1574,7 @@ node_10_11.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_10_12 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 780, top: 650
+  radius: 25, fill: "rgb(139, 193, 137)", left: 780, top: 650
 });
 canvas.add(node_10_12);
 node_10_12.selection = false;
@@ -1616,7 +1588,7 @@ node_10_12.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_10_13 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 845, top: 650
+  radius: 25, fill: "rgb(218, 181, 171)", left: 845, top: 650
 });
 canvas.add(node_10_13);
 node_10_13.selection = false;
@@ -1644,7 +1616,7 @@ node_10_14.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_10_15 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 975, top: 650
+  radius: 25, fill: "rgb(218, 181, 171)", left: 975, top: 650
 });
 canvas.add(node_10_15);
 node_10_15.selection = false;
@@ -1658,7 +1630,7 @@ node_10_15.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_10_16 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 1040, top: 650
+  radius: 25, fill: "rgb(139, 193, 137)", left: 1040, top: 650
 });
 canvas.add(node_10_16);
 node_10_16.selection = false;
@@ -1672,7 +1644,7 @@ node_10_16.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_10_17 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 1105, top: 650
+  radius: 25, fill: "rgb(218, 181, 171)", left: 1105, top: 650
 });
 canvas.add(node_10_17);
 node_10_17.selection = false;
@@ -1686,7 +1658,7 @@ node_10_17.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_10_18 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 1170, top: 650
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1170, top: 650
 });
 canvas.add(node_10_18);
 node_10_18.selection = false;
@@ -1700,7 +1672,7 @@ node_10_18.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_10_19 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 1235, top: 650
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1235, top: 650
 });
 canvas.add(node_10_19);
 node_10_19.selection = false;
@@ -1727,6 +1699,34 @@ node_10_20.on('mousedown',function(e) {
 node_10_20.set("fill",nextColor(e));
 canvas.renderAll()
 })
+var node_10_21 = new fabric.Circle({
+  radius: 25, fill: "rgb(218, 181, 171)", left: 1365, top: 650
+});
+canvas.add(node_10_21);
+node_10_21.selection = false;
+node_10_21.set('selectable',false);
+node_10_21.on('mouseover',function() {
+node_10_21.set("fill",randomColor());
+canvas.renderAll()
+});
+node_10_21.on('mousedown',function(e) {
+node_10_21.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_10_22 = new fabric.Circle({
+  radius: 25, fill: "rgb(170, 163, 195)", left: 1430, top: 650
+});
+canvas.add(node_10_22);
+node_10_22.selection = false;
+node_10_22.set('selectable',false);
+node_10_22.on('mouseover',function() {
+node_10_22.set("fill",randomColor());
+canvas.renderAll()
+});
+node_10_22.on('mousedown',function(e) {
+node_10_22.set("fill",nextColor(e));
+canvas.renderAll()
+})
 var node_11_1 = new fabric.Circle({
   radius: 25, fill: "rgb(139, 193, 137)", left: 65, top: 715
 });
@@ -1742,7 +1742,7 @@ node_11_1.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_11_2 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 130, top: 715
+  radius: 25, fill: "rgb(218, 181, 171)", left: 130, top: 715
 });
 canvas.add(node_11_2);
 node_11_2.selection = false;
@@ -1756,7 +1756,7 @@ node_11_2.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_11_3 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 195, top: 715
+  radius: 25, fill: "rgb(255, 255, 255)", left: 195, top: 715
 });
 canvas.add(node_11_3);
 node_11_3.selection = false;
@@ -1770,7 +1770,7 @@ node_11_3.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_11_4 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 260, top: 715
+  radius: 25, fill: "rgb(255, 255, 255)", left: 260, top: 715
 });
 canvas.add(node_11_4);
 node_11_4.selection = false;
@@ -1784,7 +1784,7 @@ node_11_4.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_11_5 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 325, top: 715
+  radius: 25, fill: "rgb(170, 163, 195)", left: 325, top: 715
 });
 canvas.add(node_11_5);
 node_11_5.selection = false;
@@ -1798,7 +1798,7 @@ node_11_5.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_11_6 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 390, top: 715
+  radius: 25, fill: "rgb(218, 181, 171)", left: 390, top: 715
 });
 canvas.add(node_11_6);
 node_11_6.selection = false;
@@ -1812,7 +1812,7 @@ node_11_6.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_11_7 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 455, top: 715
+  radius: 25, fill: "rgb(218, 181, 171)", left: 455, top: 715
 });
 canvas.add(node_11_7);
 node_11_7.selection = false;
@@ -1826,7 +1826,7 @@ node_11_7.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_11_8 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 520, top: 715
+  radius: 25, fill: "rgb(139, 193, 137)", left: 520, top: 715
 });
 canvas.add(node_11_8);
 node_11_8.selection = false;
@@ -1840,7 +1840,7 @@ node_11_8.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_11_9 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 585, top: 715
+  radius: 25, fill: "rgb(218, 181, 171)", left: 585, top: 715
 });
 canvas.add(node_11_9);
 node_11_9.selection = false;
@@ -1868,7 +1868,7 @@ node_11_10.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_11_11 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 715, top: 715
+  radius: 25, fill: "rgb(255, 255, 255)", left: 715, top: 715
 });
 canvas.add(node_11_11);
 node_11_11.selection = false;
@@ -1882,7 +1882,7 @@ node_11_11.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_11_12 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 780, top: 715
+  radius: 25, fill: "rgb(218, 181, 171)", left: 780, top: 715
 });
 canvas.add(node_11_12);
 node_11_12.selection = false;
@@ -1896,7 +1896,7 @@ node_11_12.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_11_13 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 845, top: 715
+  radius: 25, fill: "rgb(255, 255, 255)", left: 845, top: 715
 });
 canvas.add(node_11_13);
 node_11_13.selection = false;
@@ -1910,7 +1910,7 @@ node_11_13.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_11_14 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 910, top: 715
+  radius: 25, fill: "rgb(218, 181, 171)", left: 910, top: 715
 });
 canvas.add(node_11_14);
 node_11_14.selection = false;
@@ -1924,7 +1924,7 @@ node_11_14.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_11_15 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 975, top: 715
+  radius: 25, fill: "rgb(218, 181, 171)", left: 975, top: 715
 });
 canvas.add(node_11_15);
 node_11_15.selection = false;
@@ -1938,7 +1938,7 @@ node_11_15.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_11_16 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 1040, top: 715
+  radius: 25, fill: "rgb(139, 193, 137)", left: 1040, top: 715
 });
 canvas.add(node_11_16);
 node_11_16.selection = false;
@@ -1952,7 +1952,7 @@ node_11_16.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_11_17 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 1105, top: 715
+  radius: 25, fill: "rgb(218, 181, 171)", left: 1105, top: 715
 });
 canvas.add(node_11_17);
 node_11_17.selection = false;
@@ -2008,7 +2008,7 @@ node_11_20.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_11_21 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 1365, top: 715
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1365, top: 715
 });
 canvas.add(node_11_21);
 node_11_21.selection = false;
@@ -2021,8 +2021,64 @@ node_11_21.on('mousedown',function(e) {
 node_11_21.set("fill",nextColor(e));
 canvas.renderAll()
 })
+var node_11_22 = new fabric.Circle({
+  radius: 25, fill: "rgb(170, 163, 195)", left: 1430, top: 715
+});
+canvas.add(node_11_22);
+node_11_22.selection = false;
+node_11_22.set('selectable',false);
+node_11_22.on('mouseover',function() {
+node_11_22.set("fill",randomColor());
+canvas.renderAll()
+});
+node_11_22.on('mousedown',function(e) {
+node_11_22.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_11_23 = new fabric.Circle({
+  radius: 25, fill: "rgb(218, 181, 171)", left: 1495, top: 715
+});
+canvas.add(node_11_23);
+node_11_23.selection = false;
+node_11_23.set('selectable',false);
+node_11_23.on('mouseover',function() {
+node_11_23.set("fill",randomColor());
+canvas.renderAll()
+});
+node_11_23.on('mousedown',function(e) {
+node_11_23.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_12_0 = new fabric.Circle({
+  radius: 25, fill: "rgb(218, 181, 171)", left: 0, top: 780
+});
+canvas.add(node_12_0);
+node_12_0.selection = false;
+node_12_0.set('selectable',false);
+node_12_0.on('mouseover',function() {
+node_12_0.set("fill",randomColor());
+canvas.renderAll()
+});
+node_12_0.on('mousedown',function(e) {
+node_12_0.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_12_1 = new fabric.Circle({
+  radius: 25, fill: "rgb(139, 193, 137)", left: 65, top: 780
+});
+canvas.add(node_12_1);
+node_12_1.selection = false;
+node_12_1.set('selectable',false);
+node_12_1.on('mouseover',function() {
+node_12_1.set("fill",randomColor());
+canvas.renderAll()
+});
+node_12_1.on('mousedown',function(e) {
+node_12_1.set("fill",nextColor(e));
+canvas.renderAll()
+})
 var node_12_2 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 130, top: 780
+  radius: 25, fill: "rgb(170, 163, 195)", left: 130, top: 780
 });
 canvas.add(node_12_2);
 node_12_2.selection = false;
@@ -2036,7 +2092,7 @@ node_12_2.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_12_3 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 195, top: 780
+  radius: 25, fill: "rgb(218, 181, 171)", left: 195, top: 780
 });
 canvas.add(node_12_3);
 node_12_3.selection = false;
@@ -2064,7 +2120,7 @@ node_12_4.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_12_5 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 325, top: 780
+  radius: 25, fill: "rgb(255, 255, 255)", left: 325, top: 780
 });
 canvas.add(node_12_5);
 node_12_5.selection = false;
@@ -2078,7 +2134,7 @@ node_12_5.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_12_6 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 390, top: 780
+  radius: 25, fill: "rgb(170, 163, 195)", left: 390, top: 780
 });
 canvas.add(node_12_6);
 node_12_6.selection = false;
@@ -2092,7 +2148,7 @@ node_12_6.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_12_7 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 455, top: 780
+  radius: 25, fill: "rgb(139, 193, 137)", left: 455, top: 780
 });
 canvas.add(node_12_7);
 node_12_7.selection = false;
@@ -2120,7 +2176,7 @@ node_12_8.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_12_9 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 585, top: 780
+  radius: 25, fill: "rgb(218, 181, 171)", left: 585, top: 780
 });
 canvas.add(node_12_9);
 node_12_9.selection = false;
@@ -2134,7 +2190,7 @@ node_12_9.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_12_10 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 650, top: 780
+  radius: 25, fill: "rgb(255, 255, 255)", left: 650, top: 780
 });
 canvas.add(node_12_10);
 node_12_10.selection = false;
@@ -2148,7 +2204,7 @@ node_12_10.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_12_11 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 715, top: 780
+  radius: 25, fill: "rgb(255, 255, 255)", left: 715, top: 780
 });
 canvas.add(node_12_11);
 node_12_11.selection = false;
@@ -2176,7 +2232,7 @@ node_12_12.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_12_13 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 845, top: 780
+  radius: 25, fill: "rgb(170, 163, 195)", left: 845, top: 780
 });
 canvas.add(node_12_13);
 node_12_13.selection = false;
@@ -2190,7 +2246,7 @@ node_12_13.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_12_14 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 910, top: 780
+  radius: 25, fill: "rgb(139, 193, 137)", left: 910, top: 780
 });
 canvas.add(node_12_14);
 node_12_14.selection = false;
@@ -2204,7 +2260,7 @@ node_12_14.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_12_15 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 975, top: 780
+  radius: 25, fill: "rgb(170, 163, 195)", left: 975, top: 780
 });
 canvas.add(node_12_15);
 node_12_15.selection = false;
@@ -2218,7 +2274,7 @@ node_12_15.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_12_16 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 1040, top: 780
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1040, top: 780
 });
 canvas.add(node_12_16);
 node_12_16.selection = false;
@@ -2232,7 +2288,7 @@ node_12_16.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_12_17 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 1105, top: 780
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1105, top: 780
 });
 canvas.add(node_12_17);
 node_12_17.selection = false;
@@ -2274,7 +2330,7 @@ node_12_19.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_12_20 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 1300, top: 780
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1300, top: 780
 });
 canvas.add(node_12_20);
 node_12_20.selection = false;
@@ -2288,7 +2344,7 @@ node_12_20.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_12_21 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 1365, top: 780
+  radius: 25, fill: "rgb(170, 163, 195)", left: 1365, top: 780
 });
 canvas.add(node_12_21);
 node_12_21.selection = false;
@@ -2302,7 +2358,7 @@ node_12_21.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_12_22 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 1430, top: 780
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1430, top: 780
 });
 canvas.add(node_12_22);
 node_12_22.selection = false;
@@ -2315,8 +2371,64 @@ node_12_22.on('mousedown',function(e) {
 node_12_22.set("fill",nextColor(e));
 canvas.renderAll()
 })
+var node_12_23 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1495, top: 780
+});
+canvas.add(node_12_23);
+node_12_23.selection = false;
+node_12_23.set('selectable',false);
+node_12_23.on('mouseover',function() {
+node_12_23.set("fill",randomColor());
+canvas.renderAll()
+});
+node_12_23.on('mousedown',function(e) {
+node_12_23.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_12_24 = new fabric.Circle({
+  radius: 25, fill: "rgb(170, 163, 195)", left: 1560, top: 780
+});
+canvas.add(node_12_24);
+node_12_24.selection = false;
+node_12_24.set('selectable',false);
+node_12_24.on('mouseover',function() {
+node_12_24.set("fill",randomColor());
+canvas.renderAll()
+});
+node_12_24.on('mousedown',function(e) {
+node_12_24.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_13_1 = new fabric.Circle({
+  radius: 25, fill: "rgb(218, 181, 171)", left: 65, top: 845
+});
+canvas.add(node_13_1);
+node_13_1.selection = false;
+node_13_1.set('selectable',false);
+node_13_1.on('mouseover',function() {
+node_13_1.set("fill",randomColor());
+canvas.renderAll()
+});
+node_13_1.on('mousedown',function(e) {
+node_13_1.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_13_2 = new fabric.Circle({
+  radius: 25, fill: "rgb(218, 181, 171)", left: 130, top: 845
+});
+canvas.add(node_13_2);
+node_13_2.selection = false;
+node_13_2.set('selectable',false);
+node_13_2.on('mouseover',function() {
+node_13_2.set("fill",randomColor());
+canvas.renderAll()
+});
+node_13_2.on('mousedown',function(e) {
+node_13_2.set("fill",nextColor(e));
+canvas.renderAll()
+})
 var node_13_3 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 195, top: 845
+  radius: 25, fill: "rgb(170, 163, 195)", left: 195, top: 845
 });
 canvas.add(node_13_3);
 node_13_3.selection = false;
@@ -2330,7 +2442,7 @@ node_13_3.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_13_4 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 260, top: 845
+  radius: 25, fill: "rgb(255, 255, 255)", left: 260, top: 845
 });
 canvas.add(node_13_4);
 node_13_4.selection = false;
@@ -2344,7 +2456,7 @@ node_13_4.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_13_5 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 325, top: 845
+  radius: 25, fill: "rgb(255, 255, 255)", left: 325, top: 845
 });
 canvas.add(node_13_5);
 node_13_5.selection = false;
@@ -2358,7 +2470,7 @@ node_13_5.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_13_6 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 390, top: 845
+  radius: 25, fill: "rgb(139, 193, 137)", left: 390, top: 845
 });
 canvas.add(node_13_6);
 node_13_6.selection = false;
@@ -2372,7 +2484,7 @@ node_13_6.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_13_7 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 455, top: 845
+  radius: 25, fill: "rgb(139, 193, 137)", left: 455, top: 845
 });
 canvas.add(node_13_7);
 node_13_7.selection = false;
@@ -2386,7 +2498,7 @@ node_13_7.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_13_8 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 520, top: 845
+  radius: 25, fill: "rgb(255, 255, 255)", left: 520, top: 845
 });
 canvas.add(node_13_8);
 node_13_8.selection = false;
@@ -2456,7 +2568,7 @@ node_13_12.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_13_13 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 845, top: 845
+  radius: 25, fill: "rgb(218, 181, 171)", left: 845, top: 845
 });
 canvas.add(node_13_13);
 node_13_13.selection = false;
@@ -2470,7 +2582,7 @@ node_13_13.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_13_14 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 910, top: 845
+  radius: 25, fill: "rgb(139, 193, 137)", left: 910, top: 845
 });
 canvas.add(node_13_14);
 node_13_14.selection = false;
@@ -2484,7 +2596,7 @@ node_13_14.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_13_15 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 975, top: 845
+  radius: 25, fill: "rgb(218, 181, 171)", left: 975, top: 845
 });
 canvas.add(node_13_15);
 node_13_15.selection = false;
@@ -2498,7 +2610,7 @@ node_13_15.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_13_16 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 1040, top: 845
+  radius: 25, fill: "rgb(139, 193, 137)", left: 1040, top: 845
 });
 canvas.add(node_13_16);
 node_13_16.selection = false;
@@ -2512,7 +2624,7 @@ node_13_16.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_13_17 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 1105, top: 845
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1105, top: 845
 });
 canvas.add(node_13_17);
 node_13_17.selection = false;
@@ -2540,7 +2652,7 @@ node_13_18.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_13_19 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 1235, top: 845
+  radius: 25, fill: "rgb(218, 181, 171)", left: 1235, top: 845
 });
 canvas.add(node_13_19);
 node_13_19.selection = false;
@@ -2568,7 +2680,7 @@ node_13_20.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_13_21 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 1365, top: 845
+  radius: 25, fill: "rgb(170, 163, 195)", left: 1365, top: 845
 });
 canvas.add(node_13_21);
 node_13_21.selection = false;
@@ -2582,7 +2694,7 @@ node_13_21.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_13_22 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 1430, top: 845
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1430, top: 845
 });
 canvas.add(node_13_22);
 node_13_22.selection = false;
@@ -2596,7 +2708,7 @@ node_13_22.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_13_23 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 1495, top: 845
+  radius: 25, fill: "rgb(139, 193, 137)", left: 1495, top: 845
 });
 canvas.add(node_13_23);
 node_13_23.selection = false;
@@ -2609,8 +2721,64 @@ node_13_23.on('mousedown',function(e) {
 node_13_23.set("fill",nextColor(e));
 canvas.renderAll()
 })
+var node_13_24 = new fabric.Circle({
+  radius: 25, fill: "rgb(139, 193, 137)", left: 1560, top: 845
+});
+canvas.add(node_13_24);
+node_13_24.selection = false;
+node_13_24.set('selectable',false);
+node_13_24.on('mouseover',function() {
+node_13_24.set("fill",randomColor());
+canvas.renderAll()
+});
+node_13_24.on('mousedown',function(e) {
+node_13_24.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_13_25 = new fabric.Circle({
+  radius: 25, fill: "rgb(170, 163, 195)", left: 1625, top: 845
+});
+canvas.add(node_13_25);
+node_13_25.selection = false;
+node_13_25.set('selectable',false);
+node_13_25.on('mouseover',function() {
+node_13_25.set("fill",randomColor());
+canvas.renderAll()
+});
+node_13_25.on('mousedown',function(e) {
+node_13_25.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_14_2 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 130, top: 910
+});
+canvas.add(node_14_2);
+node_14_2.selection = false;
+node_14_2.set('selectable',false);
+node_14_2.on('mouseover',function() {
+node_14_2.set("fill",randomColor());
+canvas.renderAll()
+});
+node_14_2.on('mousedown',function(e) {
+node_14_2.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_14_3 = new fabric.Circle({
+  radius: 25, fill: "rgb(218, 181, 171)", left: 195, top: 910
+});
+canvas.add(node_14_3);
+node_14_3.selection = false;
+node_14_3.set('selectable',false);
+node_14_3.on('mouseover',function() {
+node_14_3.set("fill",randomColor());
+canvas.renderAll()
+});
+node_14_3.on('mousedown',function(e) {
+node_14_3.set("fill",nextColor(e));
+canvas.renderAll()
+})
 var node_14_4 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 260, top: 910
+  radius: 25, fill: "rgb(255, 255, 255)", left: 260, top: 910
 });
 canvas.add(node_14_4);
 node_14_4.selection = false;
@@ -2624,7 +2792,7 @@ node_14_4.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_14_5 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 325, top: 910
+  radius: 25, fill: "rgb(218, 181, 171)", left: 325, top: 910
 });
 canvas.add(node_14_5);
 node_14_5.selection = false;
@@ -2638,7 +2806,7 @@ node_14_5.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_14_6 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 390, top: 910
+  radius: 25, fill: "rgb(218, 181, 171)", left: 390, top: 910
 });
 canvas.add(node_14_6);
 node_14_6.selection = false;
@@ -2652,7 +2820,7 @@ node_14_6.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_14_7 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 455, top: 910
+  radius: 25, fill: "rgb(139, 193, 137)", left: 455, top: 910
 });
 canvas.add(node_14_7);
 node_14_7.selection = false;
@@ -2666,7 +2834,7 @@ node_14_7.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_14_8 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 520, top: 910
+  radius: 25, fill: "rgb(170, 163, 195)", left: 520, top: 910
 });
 canvas.add(node_14_8);
 node_14_8.selection = false;
@@ -2680,7 +2848,7 @@ node_14_8.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_14_9 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 585, top: 910
+  radius: 25, fill: "rgb(255, 255, 255)", left: 585, top: 910
 });
 canvas.add(node_14_9);
 node_14_9.selection = false;
@@ -2694,7 +2862,7 @@ node_14_9.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_14_10 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 650, top: 910
+  radius: 25, fill: "rgb(170, 163, 195)", left: 650, top: 910
 });
 canvas.add(node_14_10);
 node_14_10.selection = false;
@@ -2722,7 +2890,7 @@ node_14_11.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_14_12 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 780, top: 910
+  radius: 25, fill: "rgb(170, 163, 195)", left: 780, top: 910
 });
 canvas.add(node_14_12);
 node_14_12.selection = false;
@@ -2736,7 +2904,7 @@ node_14_12.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_14_13 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 845, top: 910
+  radius: 25, fill: "rgb(255, 255, 255)", left: 845, top: 910
 });
 canvas.add(node_14_13);
 node_14_13.selection = false;
@@ -2778,7 +2946,7 @@ node_14_15.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_14_16 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 1040, top: 910
+  radius: 25, fill: "rgb(139, 193, 137)", left: 1040, top: 910
 });
 canvas.add(node_14_16);
 node_14_16.selection = false;
@@ -2806,7 +2974,7 @@ node_14_17.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_14_18 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 1170, top: 910
+  radius: 25, fill: "rgb(170, 163, 195)", left: 1170, top: 910
 });
 canvas.add(node_14_18);
 node_14_18.selection = false;
@@ -2834,7 +3002,7 @@ node_14_19.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_14_20 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 1300, top: 910
+  radius: 25, fill: "rgb(139, 193, 137)", left: 1300, top: 910
 });
 canvas.add(node_14_20);
 node_14_20.selection = false;
@@ -2848,7 +3016,7 @@ node_14_20.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_14_21 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 1365, top: 910
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1365, top: 910
 });
 canvas.add(node_14_21);
 node_14_21.selection = false;
@@ -2862,7 +3030,7 @@ node_14_21.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_14_22 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 1430, top: 910
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1430, top: 910
 });
 canvas.add(node_14_22);
 node_14_22.selection = false;
@@ -2876,7 +3044,7 @@ node_14_22.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_14_23 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 1495, top: 910
+  radius: 25, fill: "rgb(218, 181, 171)", left: 1495, top: 910
 });
 canvas.add(node_14_23);
 node_14_23.selection = false;
@@ -2890,7 +3058,7 @@ node_14_23.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_14_24 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 1560, top: 910
+  radius: 25, fill: "rgb(170, 163, 195)", left: 1560, top: 910
 });
 canvas.add(node_14_24);
 node_14_24.selection = false;
@@ -2903,8 +3071,64 @@ node_14_24.on('mousedown',function(e) {
 node_14_24.set("fill",nextColor(e));
 canvas.renderAll()
 })
+var node_14_25 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1625, top: 910
+});
+canvas.add(node_14_25);
+node_14_25.selection = false;
+node_14_25.set('selectable',false);
+node_14_25.on('mouseover',function() {
+node_14_25.set("fill",randomColor());
+canvas.renderAll()
+});
+node_14_25.on('mousedown',function(e) {
+node_14_25.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_14_26 = new fabric.Circle({
+  radius: 25, fill: "rgb(170, 163, 195)", left: 1690, top: 910
+});
+canvas.add(node_14_26);
+node_14_26.selection = false;
+node_14_26.set('selectable',false);
+node_14_26.on('mouseover',function() {
+node_14_26.set("fill",randomColor());
+canvas.renderAll()
+});
+node_14_26.on('mousedown',function(e) {
+node_14_26.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_15_3 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 195, top: 975
+});
+canvas.add(node_15_3);
+node_15_3.selection = false;
+node_15_3.set('selectable',false);
+node_15_3.on('mouseover',function() {
+node_15_3.set("fill",randomColor());
+canvas.renderAll()
+});
+node_15_3.on('mousedown',function(e) {
+node_15_3.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_15_4 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 260, top: 975
+});
+canvas.add(node_15_4);
+node_15_4.selection = false;
+node_15_4.set('selectable',false);
+node_15_4.on('mouseover',function() {
+node_15_4.set("fill",randomColor());
+canvas.renderAll()
+});
+node_15_4.on('mousedown',function(e) {
+node_15_4.set("fill",nextColor(e));
+canvas.renderAll()
+})
 var node_15_5 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 325, top: 975
+  radius: 25, fill: "rgb(218, 181, 171)", left: 325, top: 975
 });
 canvas.add(node_15_5);
 node_15_5.selection = false;
@@ -2932,7 +3156,7 @@ node_15_6.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_15_7 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 455, top: 975
+  radius: 25, fill: "rgb(255, 255, 255)", left: 455, top: 975
 });
 canvas.add(node_15_7);
 node_15_7.selection = false;
@@ -2960,7 +3184,7 @@ node_15_8.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_15_9 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 585, top: 975
+  radius: 25, fill: "rgb(218, 181, 171)", left: 585, top: 975
 });
 canvas.add(node_15_9);
 node_15_9.selection = false;
@@ -2974,7 +3198,7 @@ node_15_9.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_15_10 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 650, top: 975
+  radius: 25, fill: "rgb(170, 163, 195)", left: 650, top: 975
 });
 canvas.add(node_15_10);
 node_15_10.selection = false;
@@ -2988,7 +3212,7 @@ node_15_10.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_15_11 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 715, top: 975
+  radius: 25, fill: "rgb(139, 193, 137)", left: 715, top: 975
 });
 canvas.add(node_15_11);
 node_15_11.selection = false;
@@ -3002,7 +3226,7 @@ node_15_11.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_15_12 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 780, top: 975
+  radius: 25, fill: "rgb(255, 255, 255)", left: 780, top: 975
 });
 canvas.add(node_15_12);
 node_15_12.selection = false;
@@ -3016,7 +3240,7 @@ node_15_12.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_15_13 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 845, top: 975
+  radius: 25, fill: "rgb(255, 255, 255)", left: 845, top: 975
 });
 canvas.add(node_15_13);
 node_15_13.selection = false;
@@ -3030,7 +3254,7 @@ node_15_13.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_15_14 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 910, top: 975
+  radius: 25, fill: "rgb(255, 255, 255)", left: 910, top: 975
 });
 canvas.add(node_15_14);
 node_15_14.selection = false;
@@ -3044,7 +3268,7 @@ node_15_14.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_15_15 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 975, top: 975
+  radius: 25, fill: "rgb(218, 181, 171)", left: 975, top: 975
 });
 canvas.add(node_15_15);
 node_15_15.selection = false;
@@ -3072,7 +3296,7 @@ node_15_16.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_15_17 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 1105, top: 975
+  radius: 25, fill: "rgb(170, 163, 195)", left: 1105, top: 975
 });
 canvas.add(node_15_17);
 node_15_17.selection = false;
@@ -3100,7 +3324,7 @@ node_15_18.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_15_19 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 1235, top: 975
+  radius: 25, fill: "rgb(139, 193, 137)", left: 1235, top: 975
 });
 canvas.add(node_15_19);
 node_15_19.selection = false;
@@ -3114,7 +3338,7 @@ node_15_19.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_15_20 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 1300, top: 975
+  radius: 25, fill: "rgb(218, 181, 171)", left: 1300, top: 975
 });
 canvas.add(node_15_20);
 node_15_20.selection = false;
@@ -3128,7 +3352,7 @@ node_15_20.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_15_21 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 1365, top: 975
+  radius: 25, fill: "rgb(139, 193, 137)", left: 1365, top: 975
 });
 canvas.add(node_15_21);
 node_15_21.selection = false;
@@ -3142,7 +3366,7 @@ node_15_21.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_15_22 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 1430, top: 975
+  radius: 25, fill: "rgb(218, 181, 171)", left: 1430, top: 975
 });
 canvas.add(node_15_22);
 node_15_22.selection = false;
@@ -3156,7 +3380,7 @@ node_15_22.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_15_23 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 1495, top: 975
+  radius: 25, fill: "rgb(139, 193, 137)", left: 1495, top: 975
 });
 canvas.add(node_15_23);
 node_15_23.selection = false;
@@ -3184,7 +3408,7 @@ node_15_24.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_15_25 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 1625, top: 975
+  radius: 25, fill: "rgb(170, 163, 195)", left: 1625, top: 975
 });
 canvas.add(node_15_25);
 node_15_25.selection = false;
@@ -3197,8 +3421,64 @@ node_15_25.on('mousedown',function(e) {
 node_15_25.set("fill",nextColor(e));
 canvas.renderAll()
 })
+var node_15_26 = new fabric.Circle({
+  radius: 25, fill: "rgb(218, 181, 171)", left: 1690, top: 975
+});
+canvas.add(node_15_26);
+node_15_26.selection = false;
+node_15_26.set('selectable',false);
+node_15_26.on('mouseover',function() {
+node_15_26.set("fill",randomColor());
+canvas.renderAll()
+});
+node_15_26.on('mousedown',function(e) {
+node_15_26.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_15_27 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1755, top: 975
+});
+canvas.add(node_15_27);
+node_15_27.selection = false;
+node_15_27.set('selectable',false);
+node_15_27.on('mouseover',function() {
+node_15_27.set("fill",randomColor());
+canvas.renderAll()
+});
+node_15_27.on('mousedown',function(e) {
+node_15_27.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_16_4 = new fabric.Circle({
+  radius: 25, fill: "rgb(139, 193, 137)", left: 260, top: 1040
+});
+canvas.add(node_16_4);
+node_16_4.selection = false;
+node_16_4.set('selectable',false);
+node_16_4.on('mouseover',function() {
+node_16_4.set("fill",randomColor());
+canvas.renderAll()
+});
+node_16_4.on('mousedown',function(e) {
+node_16_4.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_16_5 = new fabric.Circle({
+  radius: 25, fill: "rgb(139, 193, 137)", left: 325, top: 1040
+});
+canvas.add(node_16_5);
+node_16_5.selection = false;
+node_16_5.set('selectable',false);
+node_16_5.on('mouseover',function() {
+node_16_5.set("fill",randomColor());
+canvas.renderAll()
+});
+node_16_5.on('mousedown',function(e) {
+node_16_5.set("fill",nextColor(e));
+canvas.renderAll()
+})
 var node_16_6 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 390, top: 1040
+  radius: 25, fill: "rgb(255, 255, 255)", left: 390, top: 1040
 });
 canvas.add(node_16_6);
 node_16_6.selection = false;
@@ -3212,7 +3492,7 @@ node_16_6.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_16_7 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 455, top: 1040
+  radius: 25, fill: "rgb(255, 255, 255)", left: 455, top: 1040
 });
 canvas.add(node_16_7);
 node_16_7.selection = false;
@@ -3226,7 +3506,7 @@ node_16_7.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_16_8 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 520, top: 1040
+  radius: 25, fill: "rgb(170, 163, 195)", left: 520, top: 1040
 });
 canvas.add(node_16_8);
 node_16_8.selection = false;
@@ -3254,7 +3534,7 @@ node_16_9.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_16_10 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 650, top: 1040
+  radius: 25, fill: "rgb(170, 163, 195)", left: 650, top: 1040
 });
 canvas.add(node_16_10);
 node_16_10.selection = false;
@@ -3268,7 +3548,7 @@ node_16_10.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_16_11 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 715, top: 1040
+  radius: 25, fill: "rgb(170, 163, 195)", left: 715, top: 1040
 });
 canvas.add(node_16_11);
 node_16_11.selection = false;
@@ -3296,7 +3576,7 @@ node_16_12.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_16_13 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 845, top: 1040
+  radius: 25, fill: "rgb(218, 181, 171)", left: 845, top: 1040
 });
 canvas.add(node_16_13);
 node_16_13.selection = false;
@@ -3310,7 +3590,7 @@ node_16_13.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_16_14 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 910, top: 1040
+  radius: 25, fill: "rgb(255, 255, 255)", left: 910, top: 1040
 });
 canvas.add(node_16_14);
 node_16_14.selection = false;
@@ -3324,7 +3604,7 @@ node_16_14.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_16_15 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 975, top: 1040
+  radius: 25, fill: "rgb(170, 163, 195)", left: 975, top: 1040
 });
 canvas.add(node_16_15);
 node_16_15.selection = false;
@@ -3338,7 +3618,7 @@ node_16_15.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_16_16 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 1040, top: 1040
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1040, top: 1040
 });
 canvas.add(node_16_16);
 node_16_16.selection = false;
@@ -3394,7 +3674,7 @@ node_16_19.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_16_20 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 1300, top: 1040
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1300, top: 1040
 });
 canvas.add(node_16_20);
 node_16_20.selection = false;
@@ -3408,7 +3688,7 @@ node_16_20.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_16_21 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 1365, top: 1040
+  radius: 25, fill: "rgb(139, 193, 137)", left: 1365, top: 1040
 });
 canvas.add(node_16_21);
 node_16_21.selection = false;
@@ -3422,7 +3702,7 @@ node_16_21.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_16_22 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 1430, top: 1040
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1430, top: 1040
 });
 canvas.add(node_16_22);
 node_16_22.selection = false;
@@ -3436,7 +3716,7 @@ node_16_22.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_16_23 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 1495, top: 1040
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1495, top: 1040
 });
 canvas.add(node_16_23);
 node_16_23.selection = false;
@@ -3464,7 +3744,7 @@ node_16_24.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_16_25 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 1625, top: 1040
+  radius: 25, fill: "rgb(218, 181, 171)", left: 1625, top: 1040
 });
 canvas.add(node_16_25);
 node_16_25.selection = false;
@@ -3478,7 +3758,7 @@ node_16_25.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_16_26 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 1690, top: 1040
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1690, top: 1040
 });
 canvas.add(node_16_26);
 node_16_26.selection = false;
@@ -3491,8 +3771,64 @@ node_16_26.on('mousedown',function(e) {
 node_16_26.set("fill",nextColor(e));
 canvas.renderAll()
 })
+var node_16_27 = new fabric.Circle({
+  radius: 25, fill: "rgb(170, 163, 195)", left: 1755, top: 1040
+});
+canvas.add(node_16_27);
+node_16_27.selection = false;
+node_16_27.set('selectable',false);
+node_16_27.on('mouseover',function() {
+node_16_27.set("fill",randomColor());
+canvas.renderAll()
+});
+node_16_27.on('mousedown',function(e) {
+node_16_27.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_16_28 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1820, top: 1040
+});
+canvas.add(node_16_28);
+node_16_28.selection = false;
+node_16_28.set('selectable',false);
+node_16_28.on('mouseover',function() {
+node_16_28.set("fill",randomColor());
+canvas.renderAll()
+});
+node_16_28.on('mousedown',function(e) {
+node_16_28.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_17_5 = new fabric.Circle({
+  radius: 25, fill: "rgb(170, 163, 195)", left: 325, top: 1105
+});
+canvas.add(node_17_5);
+node_17_5.selection = false;
+node_17_5.set('selectable',false);
+node_17_5.on('mouseover',function() {
+node_17_5.set("fill",randomColor());
+canvas.renderAll()
+});
+node_17_5.on('mousedown',function(e) {
+node_17_5.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_17_6 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 390, top: 1105
+});
+canvas.add(node_17_6);
+node_17_6.selection = false;
+node_17_6.set('selectable',false);
+node_17_6.on('mouseover',function() {
+node_17_6.set("fill",randomColor());
+canvas.renderAll()
+});
+node_17_6.on('mousedown',function(e) {
+node_17_6.set("fill",nextColor(e));
+canvas.renderAll()
+})
 var node_17_7 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 455, top: 1105
+  radius: 25, fill: "rgb(139, 193, 137)", left: 455, top: 1105
 });
 canvas.add(node_17_7);
 node_17_7.selection = false;
@@ -3506,7 +3842,7 @@ node_17_7.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_17_8 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 520, top: 1105
+  radius: 25, fill: "rgb(170, 163, 195)", left: 520, top: 1105
 });
 canvas.add(node_17_8);
 node_17_8.selection = false;
@@ -3520,7 +3856,7 @@ node_17_8.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_17_9 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 585, top: 1105
+  radius: 25, fill: "rgb(170, 163, 195)", left: 585, top: 1105
 });
 canvas.add(node_17_9);
 node_17_9.selection = false;
@@ -3562,7 +3898,7 @@ node_17_11.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_17_12 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 780, top: 1105
+  radius: 25, fill: "rgb(139, 193, 137)", left: 780, top: 1105
 });
 canvas.add(node_17_12);
 node_17_12.selection = false;
@@ -3576,7 +3912,7 @@ node_17_12.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_17_13 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 845, top: 1105
+  radius: 25, fill: "rgb(218, 181, 171)", left: 845, top: 1105
 });
 canvas.add(node_17_13);
 node_17_13.selection = false;
@@ -3590,7 +3926,7 @@ node_17_13.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_17_14 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 910, top: 1105
+  radius: 25, fill: "rgb(139, 193, 137)", left: 910, top: 1105
 });
 canvas.add(node_17_14);
 node_17_14.selection = false;
@@ -3604,7 +3940,7 @@ node_17_14.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_17_15 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 975, top: 1105
+  radius: 25, fill: "rgb(170, 163, 195)", left: 975, top: 1105
 });
 canvas.add(node_17_15);
 node_17_15.selection = false;
@@ -3660,7 +3996,7 @@ node_17_18.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_17_19 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 1235, top: 1105
+  radius: 25, fill: "rgb(218, 181, 171)", left: 1235, top: 1105
 });
 canvas.add(node_17_19);
 node_17_19.selection = false;
@@ -3674,7 +4010,7 @@ node_17_19.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_17_20 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 1300, top: 1105
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1300, top: 1105
 });
 canvas.add(node_17_20);
 node_17_20.selection = false;
@@ -3702,7 +4038,7 @@ node_17_21.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_17_22 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 1430, top: 1105
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1430, top: 1105
 });
 canvas.add(node_17_22);
 node_17_22.selection = false;
@@ -3730,7 +4066,7 @@ node_17_23.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_17_24 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 1560, top: 1105
+  radius: 25, fill: "rgb(170, 163, 195)", left: 1560, top: 1105
 });
 canvas.add(node_17_24);
 node_17_24.selection = false;
@@ -3744,7 +4080,7 @@ node_17_24.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_17_25 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 1625, top: 1105
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1625, top: 1105
 });
 canvas.add(node_17_25);
 node_17_25.selection = false;
@@ -3757,8 +4093,64 @@ node_17_25.on('mousedown',function(e) {
 node_17_25.set("fill",nextColor(e));
 canvas.renderAll()
 })
+var node_17_26 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1690, top: 1105
+});
+canvas.add(node_17_26);
+node_17_26.selection = false;
+node_17_26.set('selectable',false);
+node_17_26.on('mouseover',function() {
+node_17_26.set("fill",randomColor());
+canvas.renderAll()
+});
+node_17_26.on('mousedown',function(e) {
+node_17_26.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_17_27 = new fabric.Circle({
+  radius: 25, fill: "rgb(218, 181, 171)", left: 1755, top: 1105
+});
+canvas.add(node_17_27);
+node_17_27.selection = false;
+node_17_27.set('selectable',false);
+node_17_27.on('mouseover',function() {
+node_17_27.set("fill",randomColor());
+canvas.renderAll()
+});
+node_17_27.on('mousedown',function(e) {
+node_17_27.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_18_6 = new fabric.Circle({
+  radius: 25, fill: "rgb(218, 181, 171)", left: 390, top: 1170
+});
+canvas.add(node_18_6);
+node_18_6.selection = false;
+node_18_6.set('selectable',false);
+node_18_6.on('mouseover',function() {
+node_18_6.set("fill",randomColor());
+canvas.renderAll()
+});
+node_18_6.on('mousedown',function(e) {
+node_18_6.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_18_7 = new fabric.Circle({
+  radius: 25, fill: "rgb(218, 181, 171)", left: 455, top: 1170
+});
+canvas.add(node_18_7);
+node_18_7.selection = false;
+node_18_7.set('selectable',false);
+node_18_7.on('mouseover',function() {
+node_18_7.set("fill",randomColor());
+canvas.renderAll()
+});
+node_18_7.on('mousedown',function(e) {
+node_18_7.set("fill",nextColor(e));
+canvas.renderAll()
+})
 var node_18_8 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 520, top: 1170
+  radius: 25, fill: "rgb(255, 255, 255)", left: 520, top: 1170
 });
 canvas.add(node_18_8);
 node_18_8.selection = false;
@@ -3772,7 +4164,7 @@ node_18_8.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_18_9 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 585, top: 1170
+  radius: 25, fill: "rgb(170, 163, 195)", left: 585, top: 1170
 });
 canvas.add(node_18_9);
 node_18_9.selection = false;
@@ -3786,7 +4178,7 @@ node_18_9.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_18_10 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 650, top: 1170
+  radius: 25, fill: "rgb(255, 255, 255)", left: 650, top: 1170
 });
 canvas.add(node_18_10);
 node_18_10.selection = false;
@@ -3800,7 +4192,7 @@ node_18_10.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_18_11 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 715, top: 1170
+  radius: 25, fill: "rgb(170, 163, 195)", left: 715, top: 1170
 });
 canvas.add(node_18_11);
 node_18_11.selection = false;
@@ -3814,7 +4206,7 @@ node_18_11.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_18_12 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 780, top: 1170
+  radius: 25, fill: "rgb(139, 193, 137)", left: 780, top: 1170
 });
 canvas.add(node_18_12);
 node_18_12.selection = false;
@@ -3842,7 +4234,7 @@ node_18_13.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_18_14 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 910, top: 1170
+  radius: 25, fill: "rgb(139, 193, 137)", left: 910, top: 1170
 });
 canvas.add(node_18_14);
 node_18_14.selection = false;
@@ -3856,7 +4248,7 @@ node_18_14.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_18_15 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 975, top: 1170
+  radius: 25, fill: "rgb(170, 163, 195)", left: 975, top: 1170
 });
 canvas.add(node_18_15);
 node_18_15.selection = false;
@@ -3870,7 +4262,7 @@ node_18_15.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_18_16 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 1040, top: 1170
+  radius: 25, fill: "rgb(218, 181, 171)", left: 1040, top: 1170
 });
 canvas.add(node_18_16);
 node_18_16.selection = false;
@@ -3884,7 +4276,7 @@ node_18_16.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_18_17 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 1105, top: 1170
+  radius: 25, fill: "rgb(218, 181, 171)", left: 1105, top: 1170
 });
 canvas.add(node_18_17);
 node_18_17.selection = false;
@@ -3912,7 +4304,7 @@ node_18_18.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_18_19 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 1235, top: 1170
+  radius: 25, fill: "rgb(170, 163, 195)", left: 1235, top: 1170
 });
 canvas.add(node_18_19);
 node_18_19.selection = false;
@@ -3926,7 +4318,7 @@ node_18_19.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_18_20 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 1300, top: 1170
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1300, top: 1170
 });
 canvas.add(node_18_20);
 node_18_20.selection = false;
@@ -3940,7 +4332,7 @@ node_18_20.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_18_21 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 1365, top: 1170
+  radius: 25, fill: "rgb(170, 163, 195)", left: 1365, top: 1170
 });
 canvas.add(node_18_21);
 node_18_21.selection = false;
@@ -3954,7 +4346,7 @@ node_18_21.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_18_22 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 1430, top: 1170
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1430, top: 1170
 });
 canvas.add(node_18_22);
 node_18_22.selection = false;
@@ -3982,7 +4374,7 @@ node_18_23.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_18_24 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 1560, top: 1170
+  radius: 25, fill: "rgb(170, 163, 195)", left: 1560, top: 1170
 });
 canvas.add(node_18_24);
 node_18_24.selection = false;
@@ -3993,6 +4385,62 @@ canvas.renderAll()
 });
 node_18_24.on('mousedown',function(e) {
 node_18_24.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_18_25 = new fabric.Circle({
+  radius: 25, fill: "rgb(218, 181, 171)", left: 1625, top: 1170
+});
+canvas.add(node_18_25);
+node_18_25.selection = false;
+node_18_25.set('selectable',false);
+node_18_25.on('mouseover',function() {
+node_18_25.set("fill",randomColor());
+canvas.renderAll()
+});
+node_18_25.on('mousedown',function(e) {
+node_18_25.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_18_26 = new fabric.Circle({
+  radius: 25, fill: "rgb(139, 193, 137)", left: 1690, top: 1170
+});
+canvas.add(node_18_26);
+node_18_26.selection = false;
+node_18_26.set('selectable',false);
+node_18_26.on('mouseover',function() {
+node_18_26.set("fill",randomColor());
+canvas.renderAll()
+});
+node_18_26.on('mousedown',function(e) {
+node_18_26.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_19_7 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 455, top: 1235
+});
+canvas.add(node_19_7);
+node_19_7.selection = false;
+node_19_7.set('selectable',false);
+node_19_7.on('mouseover',function() {
+node_19_7.set("fill",randomColor());
+canvas.renderAll()
+});
+node_19_7.on('mousedown',function(e) {
+node_19_7.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_19_8 = new fabric.Circle({
+  radius: 25, fill: "rgb(218, 181, 171)", left: 520, top: 1235
+});
+canvas.add(node_19_8);
+node_19_8.selection = false;
+node_19_8.set('selectable',false);
+node_19_8.on('mouseover',function() {
+node_19_8.set("fill",randomColor());
+canvas.renderAll()
+});
+node_19_8.on('mousedown',function(e) {
+node_19_8.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_19_9 = new fabric.Circle({
@@ -4010,7 +4458,7 @@ node_19_9.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_19_10 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 650, top: 1235
+  radius: 25, fill: "rgb(139, 193, 137)", left: 650, top: 1235
 });
 canvas.add(node_19_10);
 node_19_10.selection = false;
@@ -4024,7 +4472,7 @@ node_19_10.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_19_11 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 715, top: 1235
+  radius: 25, fill: "rgb(255, 255, 255)", left: 715, top: 1235
 });
 canvas.add(node_19_11);
 node_19_11.selection = false;
@@ -4038,7 +4486,7 @@ node_19_11.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_19_12 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 780, top: 1235
+  radius: 25, fill: "rgb(255, 255, 255)", left: 780, top: 1235
 });
 canvas.add(node_19_12);
 node_19_12.selection = false;
@@ -4094,7 +4542,7 @@ node_19_15.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_19_16 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 1040, top: 1235
+  radius: 25, fill: "rgb(170, 163, 195)", left: 1040, top: 1235
 });
 canvas.add(node_19_16);
 node_19_16.selection = false;
@@ -4108,7 +4556,7 @@ node_19_16.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_19_17 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 1105, top: 1235
+  radius: 25, fill: "rgb(218, 181, 171)", left: 1105, top: 1235
 });
 canvas.add(node_19_17);
 node_19_17.selection = false;
@@ -4122,7 +4570,7 @@ node_19_17.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_19_18 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 1170, top: 1235
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1170, top: 1235
 });
 canvas.add(node_19_18);
 node_19_18.selection = false;
@@ -4150,7 +4598,7 @@ node_19_19.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_19_20 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 1300, top: 1235
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1300, top: 1235
 });
 canvas.add(node_19_20);
 node_19_20.selection = false;
@@ -4205,8 +4653,64 @@ node_19_23.on('mousedown',function(e) {
 node_19_23.set("fill",nextColor(e));
 canvas.renderAll()
 })
+var node_19_24 = new fabric.Circle({
+  radius: 25, fill: "rgb(218, 181, 171)", left: 1560, top: 1235
+});
+canvas.add(node_19_24);
+node_19_24.selection = false;
+node_19_24.set('selectable',false);
+node_19_24.on('mouseover',function() {
+node_19_24.set("fill",randomColor());
+canvas.renderAll()
+});
+node_19_24.on('mousedown',function(e) {
+node_19_24.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_19_25 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1625, top: 1235
+});
+canvas.add(node_19_25);
+node_19_25.selection = false;
+node_19_25.set('selectable',false);
+node_19_25.on('mouseover',function() {
+node_19_25.set("fill",randomColor());
+canvas.renderAll()
+});
+node_19_25.on('mousedown',function(e) {
+node_19_25.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_20_8 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 520, top: 1300
+});
+canvas.add(node_20_8);
+node_20_8.selection = false;
+node_20_8.set('selectable',false);
+node_20_8.on('mouseover',function() {
+node_20_8.set("fill",randomColor());
+canvas.renderAll()
+});
+node_20_8.on('mousedown',function(e) {
+node_20_8.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_20_9 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 585, top: 1300
+});
+canvas.add(node_20_9);
+node_20_9.selection = false;
+node_20_9.set('selectable',false);
+node_20_9.on('mouseover',function() {
+node_20_9.set("fill",randomColor());
+canvas.renderAll()
+});
+node_20_9.on('mousedown',function(e) {
+node_20_9.set("fill",nextColor(e));
+canvas.renderAll()
+})
 var node_20_10 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 650, top: 1300
+  radius: 25, fill: "rgb(170, 163, 195)", left: 650, top: 1300
 });
 canvas.add(node_20_10);
 node_20_10.selection = false;
@@ -4220,7 +4724,7 @@ node_20_10.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_20_11 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 715, top: 1300
+  radius: 25, fill: "rgb(170, 163, 195)", left: 715, top: 1300
 });
 canvas.add(node_20_11);
 node_20_11.selection = false;
@@ -4234,7 +4738,7 @@ node_20_11.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_20_12 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 780, top: 1300
+  radius: 25, fill: "rgb(218, 181, 171)", left: 780, top: 1300
 });
 canvas.add(node_20_12);
 node_20_12.selection = false;
@@ -4262,7 +4766,7 @@ node_20_13.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_20_14 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 910, top: 1300
+  radius: 25, fill: "rgb(255, 255, 255)", left: 910, top: 1300
 });
 canvas.add(node_20_14);
 node_20_14.selection = false;
@@ -4276,7 +4780,7 @@ node_20_14.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_20_15 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 975, top: 1300
+  radius: 25, fill: "rgb(255, 255, 255)", left: 975, top: 1300
 });
 canvas.add(node_20_15);
 node_20_15.selection = false;
@@ -4304,7 +4808,7 @@ node_20_16.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_20_17 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 1105, top: 1300
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1105, top: 1300
 });
 canvas.add(node_20_17);
 node_20_17.selection = false;
@@ -4318,7 +4822,7 @@ node_20_17.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_20_18 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 1170, top: 1300
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1170, top: 1300
 });
 canvas.add(node_20_18);
 node_20_18.selection = false;
@@ -4332,7 +4836,7 @@ node_20_18.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_20_19 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 1235, top: 1300
+  radius: 25, fill: "rgb(218, 181, 171)", left: 1235, top: 1300
 });
 canvas.add(node_20_19);
 node_20_19.selection = false;
@@ -4346,7 +4850,7 @@ node_20_19.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_20_20 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 1300, top: 1300
+  radius: 25, fill: "rgb(218, 181, 171)", left: 1300, top: 1300
 });
 canvas.add(node_20_20);
 node_20_20.selection = false;
@@ -4374,7 +4878,7 @@ node_20_21.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_20_22 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 1430, top: 1300
+  radius: 25, fill: "rgb(170, 163, 195)", left: 1430, top: 1300
 });
 canvas.add(node_20_22);
 node_20_22.selection = false;
@@ -4387,88 +4891,60 @@ node_20_22.on('mousedown',function(e) {
 node_20_22.set("fill",nextColor(e));
 canvas.renderAll()
 })
-var node_21_16 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 1040, top: 1365
+var node_20_23 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1495, top: 1300
 });
-canvas.add(node_21_16);
-node_21_16.selection = false;
-node_21_16.set('selectable',false);
-node_21_16.on('mouseover',function() {
-node_21_16.set("fill",randomColor());
+canvas.add(node_20_23);
+node_20_23.selection = false;
+node_20_23.set('selectable',false);
+node_20_23.on('mouseover',function() {
+node_20_23.set("fill",randomColor());
 canvas.renderAll()
 });
-node_21_16.on('mousedown',function(e) {
-node_21_16.set("fill",nextColor(e));
-canvas.renderAll()
-})
-var node_21_17 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 1105, top: 1365
-});
-canvas.add(node_21_17);
-node_21_17.selection = false;
-node_21_17.set('selectable',false);
-node_21_17.on('mouseover',function() {
-node_21_17.set("fill",randomColor());
-canvas.renderAll()
-});
-node_21_17.on('mousedown',function(e) {
-node_21_17.set("fill",nextColor(e));
+node_20_23.on('mousedown',function(e) {
+node_20_23.set("fill",nextColor(e));
 canvas.renderAll()
 })
-var node_21_18 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 1170, top: 1365
+var node_20_24 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1560, top: 1300
 });
-canvas.add(node_21_18);
-node_21_18.selection = false;
-node_21_18.set('selectable',false);
-node_21_18.on('mouseover',function() {
-node_21_18.set("fill",randomColor());
+canvas.add(node_20_24);
+node_20_24.selection = false;
+node_20_24.set('selectable',false);
+node_20_24.on('mouseover',function() {
+node_20_24.set("fill",randomColor());
 canvas.renderAll()
 });
-node_21_18.on('mousedown',function(e) {
-node_21_18.set("fill",nextColor(e));
-canvas.renderAll()
-})
-var node_21_19 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 1235, top: 1365
-});
-canvas.add(node_21_19);
-node_21_19.selection = false;
-node_21_19.set('selectable',false);
-node_21_19.on('mouseover',function() {
-node_21_19.set("fill",randomColor());
-canvas.renderAll()
-});
-node_21_19.on('mousedown',function(e) {
-node_21_19.set("fill",nextColor(e));
+node_20_24.on('mousedown',function(e) {
+node_20_24.set("fill",nextColor(e));
 canvas.renderAll()
 })
-var node_21_20 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 1300, top: 1365
+var node_21_9 = new fabric.Circle({
+  radius: 25, fill: "rgb(170, 163, 195)", left: 585, top: 1365
 });
-canvas.add(node_21_20);
-node_21_20.selection = false;
-node_21_20.set('selectable',false);
-node_21_20.on('mouseover',function() {
-node_21_20.set("fill",randomColor());
+canvas.add(node_21_9);
+node_21_9.selection = false;
+node_21_9.set('selectable',false);
+node_21_9.on('mouseover',function() {
+node_21_9.set("fill",randomColor());
 canvas.renderAll()
 });
-node_21_20.on('mousedown',function(e) {
-node_21_20.set("fill",nextColor(e));
+node_21_9.on('mousedown',function(e) {
+node_21_9.set("fill",nextColor(e));
 canvas.renderAll()
 })
-var node_21_21 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 1365, top: 1365
+var node_21_10 = new fabric.Circle({
+  radius: 25, fill: "rgb(170, 163, 195)", left: 650, top: 1365
 });
-canvas.add(node_21_21);
-node_21_21.selection = false;
-node_21_21.set('selectable',false);
-node_21_21.on('mouseover',function() {
-node_21_21.set("fill",randomColor());
+canvas.add(node_21_10);
+node_21_10.selection = false;
+node_21_10.set('selectable',false);
+node_21_10.on('mouseover',function() {
+node_21_10.set("fill",randomColor());
 canvas.renderAll()
 });
-node_21_21.on('mousedown',function(e) {
-node_21_21.set("fill",nextColor(e));
+node_21_10.on('mousedown',function(e) {
+node_21_10.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_21_11 = new fabric.Circle({
@@ -4514,7 +4990,7 @@ node_21_13.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_21_14 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 910, top: 1365
+  radius: 25, fill: "rgb(218, 181, 171)", left: 910, top: 1365
 });
 canvas.add(node_21_14);
 node_21_14.selection = false;
@@ -4528,7 +5004,7 @@ node_21_14.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_21_15 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 975, top: 1365
+  radius: 25, fill: "rgb(139, 193, 137)", left: 975, top: 1365
 });
 canvas.add(node_21_15);
 node_21_15.selection = false;
@@ -4541,78 +5017,148 @@ node_21_15.on('mousedown',function(e) {
 node_21_15.set("fill",nextColor(e));
 canvas.renderAll()
 })
-var node_22_16 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 1040, top: 1430
+var node_21_16 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1040, top: 1365
 });
-canvas.add(node_22_16);
-node_22_16.selection = false;
-node_22_16.set('selectable',false);
-node_22_16.on('mouseover',function() {
-node_22_16.set("fill",randomColor());
+canvas.add(node_21_16);
+node_21_16.selection = false;
+node_21_16.set('selectable',false);
+node_21_16.on('mouseover',function() {
+node_21_16.set("fill",randomColor());
 canvas.renderAll()
 });
-node_22_16.on('mousedown',function(e) {
-node_22_16.set("fill",nextColor(e));
-canvas.renderAll()
-})
-var node_22_17 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 1105, top: 1430
-});
-canvas.add(node_22_17);
-node_22_17.selection = false;
-node_22_17.set('selectable',false);
-node_22_17.on('mouseover',function() {
-node_22_17.set("fill",randomColor());
-canvas.renderAll()
-});
-node_22_17.on('mousedown',function(e) {
-node_22_17.set("fill",nextColor(e));
+node_21_16.on('mousedown',function(e) {
+node_21_16.set("fill",nextColor(e));
 canvas.renderAll()
 })
-var node_22_18 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 1170, top: 1430
+var node_21_17 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1105, top: 1365
 });
-canvas.add(node_22_18);
-node_22_18.selection = false;
-node_22_18.set('selectable',false);
-node_22_18.on('mouseover',function() {
-node_22_18.set("fill",randomColor());
+canvas.add(node_21_17);
+node_21_17.selection = false;
+node_21_17.set('selectable',false);
+node_21_17.on('mouseover',function() {
+node_21_17.set("fill",randomColor());
 canvas.renderAll()
 });
-node_22_18.on('mousedown',function(e) {
-node_22_18.set("fill",nextColor(e));
-canvas.renderAll()
-})
-var node_22_19 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 1235, top: 1430
-});
-canvas.add(node_22_19);
-node_22_19.selection = false;
-node_22_19.set('selectable',false);
-node_22_19.on('mouseover',function() {
-node_22_19.set("fill",randomColor());
-canvas.renderAll()
-});
-node_22_19.on('mousedown',function(e) {
-node_22_19.set("fill",nextColor(e));
+node_21_17.on('mousedown',function(e) {
+node_21_17.set("fill",nextColor(e));
 canvas.renderAll()
 })
-var node_22_20 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 1300, top: 1430
+var node_21_18 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1170, top: 1365
 });
-canvas.add(node_22_20);
-node_22_20.selection = false;
-node_22_20.set('selectable',false);
-node_22_20.on('mouseover',function() {
-node_22_20.set("fill",randomColor());
+canvas.add(node_21_18);
+node_21_18.selection = false;
+node_21_18.set('selectable',false);
+node_21_18.on('mouseover',function() {
+node_21_18.set("fill",randomColor());
 canvas.renderAll()
 });
-node_22_20.on('mousedown',function(e) {
-node_22_20.set("fill",nextColor(e));
+node_21_18.on('mousedown',function(e) {
+node_21_18.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_21_19 = new fabric.Circle({
+  radius: 25, fill: "rgb(218, 181, 171)", left: 1235, top: 1365
+});
+canvas.add(node_21_19);
+node_21_19.selection = false;
+node_21_19.set('selectable',false);
+node_21_19.on('mouseover',function() {
+node_21_19.set("fill",randomColor());
+canvas.renderAll()
+});
+node_21_19.on('mousedown',function(e) {
+node_21_19.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_21_20 = new fabric.Circle({
+  radius: 25, fill: "rgb(139, 193, 137)", left: 1300, top: 1365
+});
+canvas.add(node_21_20);
+node_21_20.selection = false;
+node_21_20.set('selectable',false);
+node_21_20.on('mouseover',function() {
+node_21_20.set("fill",randomColor());
+canvas.renderAll()
+});
+node_21_20.on('mousedown',function(e) {
+node_21_20.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_21_21 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1365, top: 1365
+});
+canvas.add(node_21_21);
+node_21_21.selection = false;
+node_21_21.set('selectable',false);
+node_21_21.on('mouseover',function() {
+node_21_21.set("fill",randomColor());
+canvas.renderAll()
+});
+node_21_21.on('mousedown',function(e) {
+node_21_21.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_21_22 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1430, top: 1365
+});
+canvas.add(node_21_22);
+node_21_22.selection = false;
+node_21_22.set('selectable',false);
+node_21_22.on('mouseover',function() {
+node_21_22.set("fill",randomColor());
+canvas.renderAll()
+});
+node_21_22.on('mousedown',function(e) {
+node_21_22.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_21_23 = new fabric.Circle({
+  radius: 25, fill: "rgb(170, 163, 195)", left: 1495, top: 1365
+});
+canvas.add(node_21_23);
+node_21_23.selection = false;
+node_21_23.set('selectable',false);
+node_21_23.on('mouseover',function() {
+node_21_23.set("fill",randomColor());
+canvas.renderAll()
+});
+node_21_23.on('mousedown',function(e) {
+node_21_23.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_22_10 = new fabric.Circle({
+  radius: 25, fill: "rgb(170, 163, 195)", left: 650, top: 1430
+});
+canvas.add(node_22_10);
+node_22_10.selection = false;
+node_22_10.set('selectable',false);
+node_22_10.on('mouseover',function() {
+node_22_10.set("fill",randomColor());
+canvas.renderAll()
+});
+node_22_10.on('mousedown',function(e) {
+node_22_10.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_22_11 = new fabric.Circle({
+  radius: 25, fill: "rgb(170, 163, 195)", left: 715, top: 1430
+});
+canvas.add(node_22_11);
+node_22_11.selection = false;
+node_22_11.set('selectable',false);
+node_22_11.on('mouseover',function() {
+node_22_11.set("fill",randomColor());
+canvas.renderAll()
+});
+node_22_11.on('mousedown',function(e) {
+node_22_11.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_22_12 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 780, top: 1430
+  radius: 25, fill: "rgb(255, 255, 255)", left: 780, top: 1430
 });
 canvas.add(node_22_12);
 node_22_12.selection = false;
@@ -4640,7 +5186,7 @@ node_22_13.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_22_14 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 910, top: 1430
+  radius: 25, fill: "rgb(218, 181, 171)", left: 910, top: 1430
 });
 canvas.add(node_22_14);
 node_22_14.selection = false;
@@ -4654,7 +5200,7 @@ node_22_14.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_22_15 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 975, top: 1430
+  radius: 25, fill: "rgb(255, 255, 255)", left: 975, top: 1430
 });
 canvas.add(node_22_15);
 node_22_15.selection = false;
@@ -4667,8 +5213,106 @@ node_22_15.on('mousedown',function(e) {
 node_22_15.set("fill",nextColor(e));
 canvas.renderAll()
 })
+var node_22_16 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1040, top: 1430
+});
+canvas.add(node_22_16);
+node_22_16.selection = false;
+node_22_16.set('selectable',false);
+node_22_16.on('mouseover',function() {
+node_22_16.set("fill",randomColor());
+canvas.renderAll()
+});
+node_22_16.on('mousedown',function(e) {
+node_22_16.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_22_17 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1105, top: 1430
+});
+canvas.add(node_22_17);
+node_22_17.selection = false;
+node_22_17.set('selectable',false);
+node_22_17.on('mouseover',function() {
+node_22_17.set("fill",randomColor());
+canvas.renderAll()
+});
+node_22_17.on('mousedown',function(e) {
+node_22_17.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_22_18 = new fabric.Circle({
+  radius: 25, fill: "rgb(170, 163, 195)", left: 1170, top: 1430
+});
+canvas.add(node_22_18);
+node_22_18.selection = false;
+node_22_18.set('selectable',false);
+node_22_18.on('mouseover',function() {
+node_22_18.set("fill",randomColor());
+canvas.renderAll()
+});
+node_22_18.on('mousedown',function(e) {
+node_22_18.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_22_19 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1235, top: 1430
+});
+canvas.add(node_22_19);
+node_22_19.selection = false;
+node_22_19.set('selectable',false);
+node_22_19.on('mouseover',function() {
+node_22_19.set("fill",randomColor());
+canvas.renderAll()
+});
+node_22_19.on('mousedown',function(e) {
+node_22_19.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_22_20 = new fabric.Circle({
+  radius: 25, fill: "rgb(139, 193, 137)", left: 1300, top: 1430
+});
+canvas.add(node_22_20);
+node_22_20.selection = false;
+node_22_20.set('selectable',false);
+node_22_20.on('mouseover',function() {
+node_22_20.set("fill",randomColor());
+canvas.renderAll()
+});
+node_22_20.on('mousedown',function(e) {
+node_22_20.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_22_21 = new fabric.Circle({
+  radius: 25, fill: "rgb(218, 181, 171)", left: 1365, top: 1430
+});
+canvas.add(node_22_21);
+node_22_21.selection = false;
+node_22_21.set('selectable',false);
+node_22_21.on('mouseover',function() {
+node_22_21.set("fill",randomColor());
+canvas.renderAll()
+});
+node_22_21.on('mousedown',function(e) {
+node_22_21.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_22_22 = new fabric.Circle({
+  radius: 25, fill: "rgb(218, 181, 171)", left: 1430, top: 1430
+});
+canvas.add(node_22_22);
+node_22_22.selection = false;
+node_22_22.set('selectable',false);
+node_22_22.on('mouseover',function() {
+node_22_22.set("fill",randomColor());
+canvas.renderAll()
+});
+node_22_22.on('mousedown',function(e) {
+node_22_22.set("fill",nextColor(e));
+canvas.renderAll()
+})
 var node_23_16 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 1040, top: 1495
+  radius: 25, fill: "rgb(170, 163, 195)", left: 1040, top: 1495
 });
 canvas.add(node_23_16);
 node_23_16.selection = false;
@@ -4682,7 +5326,7 @@ node_23_16.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_23_17 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 1105, top: 1495
+  radius: 25, fill: "rgb(139, 193, 137)", left: 1105, top: 1495
 });
 canvas.add(node_23_17);
 node_23_17.selection = false;
@@ -4696,7 +5340,7 @@ node_23_17.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_23_18 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 1170, top: 1495
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1170, top: 1495
 });
 canvas.add(node_23_18);
 node_23_18.selection = false;
@@ -4710,7 +5354,7 @@ node_23_18.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_23_19 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 1235, top: 1495
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1235, top: 1495
 });
 canvas.add(node_23_19);
 node_23_19.selection = false;
@@ -4723,8 +5367,64 @@ node_23_19.on('mousedown',function(e) {
 node_23_19.set("fill",nextColor(e));
 canvas.renderAll()
 })
+var node_23_20 = new fabric.Circle({
+  radius: 25, fill: "rgb(139, 193, 137)", left: 1300, top: 1495
+});
+canvas.add(node_23_20);
+node_23_20.selection = false;
+node_23_20.set('selectable',false);
+node_23_20.on('mouseover',function() {
+node_23_20.set("fill",randomColor());
+canvas.renderAll()
+});
+node_23_20.on('mousedown',function(e) {
+node_23_20.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_23_21 = new fabric.Circle({
+  radius: 25, fill: "rgb(139, 193, 137)", left: 1365, top: 1495
+});
+canvas.add(node_23_21);
+node_23_21.selection = false;
+node_23_21.set('selectable',false);
+node_23_21.on('mouseover',function() {
+node_23_21.set("fill",randomColor());
+canvas.renderAll()
+});
+node_23_21.on('mousedown',function(e) {
+node_23_21.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_23_11 = new fabric.Circle({
+  radius: 25, fill: "rgb(139, 193, 137)", left: 715, top: 1495
+});
+canvas.add(node_23_11);
+node_23_11.selection = false;
+node_23_11.set('selectable',false);
+node_23_11.on('mouseover',function() {
+node_23_11.set("fill",randomColor());
+canvas.renderAll()
+});
+node_23_11.on('mousedown',function(e) {
+node_23_11.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_23_12 = new fabric.Circle({
+  radius: 25, fill: "rgb(170, 163, 195)", left: 780, top: 1495
+});
+canvas.add(node_23_12);
+node_23_12.selection = false;
+node_23_12.set('selectable',false);
+node_23_12.on('mouseover',function() {
+node_23_12.set("fill",randomColor());
+canvas.renderAll()
+});
+node_23_12.on('mousedown',function(e) {
+node_23_12.set("fill",nextColor(e));
+canvas.renderAll()
+})
 var node_23_13 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 845, top: 1495
+  radius: 25, fill: "rgb(170, 163, 195)", left: 845, top: 1495
 });
 canvas.add(node_23_13);
 node_23_13.selection = false;
@@ -4752,7 +5452,7 @@ node_23_14.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_23_15 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 975, top: 1495
+  radius: 25, fill: "rgb(255, 255, 255)", left: 975, top: 1495
 });
 canvas.add(node_23_15);
 node_23_15.selection = false;
@@ -4766,7 +5466,7 @@ node_23_15.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_24_16 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 1040, top: 1560
+  radius: 25, fill: "rgb(218, 181, 171)", left: 1040, top: 1560
 });
 canvas.add(node_24_16);
 node_24_16.selection = false;
@@ -4794,7 +5494,7 @@ node_24_17.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_24_18 = new fabric.Circle({
-  radius: 25, fill: "rgb(255, 255, 255)", left: 1170, top: 1560
+  radius: 25, fill: "rgb(139, 193, 137)", left: 1170, top: 1560
 });
 canvas.add(node_24_18);
 node_24_18.selection = false;
@@ -4807,8 +5507,64 @@ node_24_18.on('mousedown',function(e) {
 node_24_18.set("fill",nextColor(e));
 canvas.renderAll()
 })
+var node_24_19 = new fabric.Circle({
+  radius: 25, fill: "rgb(139, 193, 137)", left: 1235, top: 1560
+});
+canvas.add(node_24_19);
+node_24_19.selection = false;
+node_24_19.set('selectable',false);
+node_24_19.on('mouseover',function() {
+node_24_19.set("fill",randomColor());
+canvas.renderAll()
+});
+node_24_19.on('mousedown',function(e) {
+node_24_19.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_24_20 = new fabric.Circle({
+  radius: 25, fill: "rgb(139, 193, 137)", left: 1300, top: 1560
+});
+canvas.add(node_24_20);
+node_24_20.selection = false;
+node_24_20.set('selectable',false);
+node_24_20.on('mouseover',function() {
+node_24_20.set("fill",randomColor());
+canvas.renderAll()
+});
+node_24_20.on('mousedown',function(e) {
+node_24_20.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_24_12 = new fabric.Circle({
+  radius: 25, fill: "rgb(218, 181, 171)", left: 780, top: 1560
+});
+canvas.add(node_24_12);
+node_24_12.selection = false;
+node_24_12.set('selectable',false);
+node_24_12.on('mouseover',function() {
+node_24_12.set("fill",randomColor());
+canvas.renderAll()
+});
+node_24_12.on('mousedown',function(e) {
+node_24_12.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_24_13 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 845, top: 1560
+});
+canvas.add(node_24_13);
+node_24_13.selection = false;
+node_24_13.set('selectable',false);
+node_24_13.on('mouseover',function() {
+node_24_13.set("fill",randomColor());
+canvas.renderAll()
+});
+node_24_13.on('mousedown',function(e) {
+node_24_13.set("fill",nextColor(e));
+canvas.renderAll()
+})
 var node_24_14 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 910, top: 1560
+  radius: 25, fill: "rgb(255, 255, 255)", left: 910, top: 1560
 });
 canvas.add(node_24_14);
 node_24_14.selection = false;
@@ -4822,7 +5578,7 @@ node_24_14.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_24_15 = new fabric.Circle({
-  radius: 25, fill: "rgb(218, 181, 171)", left: 975, top: 1560
+  radius: 25, fill: "rgb(170, 163, 195)", left: 975, top: 1560
 });
 canvas.add(node_24_15);
 node_24_15.selection = false;
@@ -4850,7 +5606,7 @@ node_25_16.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_25_17 = new fabric.Circle({
-  radius: 25, fill: "rgb(170, 163, 195)", left: 1105, top: 1625
+  radius: 25, fill: "rgb(139, 193, 137)", left: 1105, top: 1625
 });
 canvas.add(node_25_17);
 node_25_17.selection = false;
@@ -4861,6 +5617,62 @@ canvas.renderAll()
 });
 node_25_17.on('mousedown',function(e) {
 node_25_17.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_25_18 = new fabric.Circle({
+  radius: 25, fill: "rgb(218, 181, 171)", left: 1170, top: 1625
+});
+canvas.add(node_25_18);
+node_25_18.selection = false;
+node_25_18.set('selectable',false);
+node_25_18.on('mouseover',function() {
+node_25_18.set("fill",randomColor());
+canvas.renderAll()
+});
+node_25_18.on('mousedown',function(e) {
+node_25_18.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_25_19 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 1235, top: 1625
+});
+canvas.add(node_25_19);
+node_25_19.selection = false;
+node_25_19.set('selectable',false);
+node_25_19.on('mouseover',function() {
+node_25_19.set("fill",randomColor());
+canvas.renderAll()
+});
+node_25_19.on('mousedown',function(e) {
+node_25_19.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_25_13 = new fabric.Circle({
+  radius: 25, fill: "rgb(139, 193, 137)", left: 845, top: 1625
+});
+canvas.add(node_25_13);
+node_25_13.selection = false;
+node_25_13.set('selectable',false);
+node_25_13.on('mouseover',function() {
+node_25_13.set("fill",randomColor());
+canvas.renderAll()
+});
+node_25_13.on('mousedown',function(e) {
+node_25_13.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_25_14 = new fabric.Circle({
+  radius: 25, fill: "rgb(218, 181, 171)", left: 910, top: 1625
+});
+canvas.add(node_25_14);
+node_25_14.selection = false;
+node_25_14.set('selectable',false);
+node_25_14.on('mouseover',function() {
+node_25_14.set("fill",randomColor());
+canvas.renderAll()
+});
+node_25_14.on('mousedown',function(e) {
+node_25_14.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_25_15 = new fabric.Circle({
@@ -4878,7 +5690,7 @@ node_25_15.set("fill",nextColor(e));
 canvas.renderAll()
 })
 var node_26_16 = new fabric.Circle({
-  radius: 25, fill: "rgb(139, 193, 137)", left: 1040, top: 1690
+  radius: 25, fill: "rgb(218, 181, 171)", left: 1040, top: 1690
 });
 canvas.add(node_26_16);
 node_26_16.selection = false;
@@ -4889,6 +5701,118 @@ canvas.renderAll()
 });
 node_26_16.on('mousedown',function(e) {
 node_26_16.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_26_17 = new fabric.Circle({
+  radius: 25, fill: "rgb(170, 163, 195)", left: 1105, top: 1690
+});
+canvas.add(node_26_17);
+node_26_17.selection = false;
+node_26_17.set('selectable',false);
+node_26_17.on('mouseover',function() {
+node_26_17.set("fill",randomColor());
+canvas.renderAll()
+});
+node_26_17.on('mousedown',function(e) {
+node_26_17.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_26_18 = new fabric.Circle({
+  radius: 25, fill: "rgb(170, 163, 195)", left: 1170, top: 1690
+});
+canvas.add(node_26_18);
+node_26_18.selection = false;
+node_26_18.set('selectable',false);
+node_26_18.on('mouseover',function() {
+node_26_18.set("fill",randomColor());
+canvas.renderAll()
+});
+node_26_18.on('mousedown',function(e) {
+node_26_18.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_26_14 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 910, top: 1690
+});
+canvas.add(node_26_14);
+node_26_14.selection = false;
+node_26_14.set('selectable',false);
+node_26_14.on('mouseover',function() {
+node_26_14.set("fill",randomColor());
+canvas.renderAll()
+});
+node_26_14.on('mousedown',function(e) {
+node_26_14.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_26_15 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 975, top: 1690
+});
+canvas.add(node_26_15);
+node_26_15.selection = false;
+node_26_15.set('selectable',false);
+node_26_15.on('mouseover',function() {
+node_26_15.set("fill",randomColor());
+canvas.renderAll()
+});
+node_26_15.on('mousedown',function(e) {
+node_26_15.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_27_16 = new fabric.Circle({
+  radius: 25, fill: "rgb(139, 193, 137)", left: 1040, top: 1755
+});
+canvas.add(node_27_16);
+node_27_16.selection = false;
+node_27_16.set('selectable',false);
+node_27_16.on('mouseover',function() {
+node_27_16.set("fill",randomColor());
+canvas.renderAll()
+});
+node_27_16.on('mousedown',function(e) {
+node_27_16.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_27_17 = new fabric.Circle({
+  radius: 25, fill: "rgb(139, 193, 137)", left: 1105, top: 1755
+});
+canvas.add(node_27_17);
+node_27_17.selection = false;
+node_27_17.set('selectable',false);
+node_27_17.on('mouseover',function() {
+node_27_17.set("fill",randomColor());
+canvas.renderAll()
+});
+node_27_17.on('mousedown',function(e) {
+node_27_17.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_27_15 = new fabric.Circle({
+  radius: 25, fill: "rgb(255, 255, 255)", left: 975, top: 1755
+});
+canvas.add(node_27_15);
+node_27_15.selection = false;
+node_27_15.set('selectable',false);
+node_27_15.on('mouseover',function() {
+node_27_15.set("fill",randomColor());
+canvas.renderAll()
+});
+node_27_15.on('mousedown',function(e) {
+node_27_15.set("fill",nextColor(e));
+canvas.renderAll()
+})
+var node_28_16 = new fabric.Circle({
+  radius: 25, fill: "rgb(170, 163, 195)", left: 1040, top: 1820
+});
+canvas.add(node_28_16);
+node_28_16.selection = false;
+node_28_16.set('selectable',false);
+node_28_16.on('mouseover',function() {
+node_28_16.set("fill",randomColor());
+canvas.renderAll()
+});
+node_28_16.on('mousedown',function(e) {
+node_28_16.set("fill",nextColor(e));
 canvas.renderAll()
 })
 

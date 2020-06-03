@@ -5,28 +5,30 @@ from numpy.random import choice
 import time
 import math
 
+M = int(sys.argv[1])
+N = int(sys.argv[2])
+
 #this makes an NxM matrix of alternating zeroes and ones
-def make_checkerboard(M,N):
+def make_rect_checkerboard(M,N):
 	array = [[(i+j+1)%2 for i in range(1,N+1)] for j in range(1,M+1)]
 	matrix = numpy.reshape(array,(M,N))
-	print("Checkerboard\n",matrix)
+	#print("Checkerboard\n",matrix)
 	return matrix
 
 #this makes an NxM matrix with unique values
 #specifically, incrementing integers with 
-def make_rectangular_matrix(M,N):
+def make_rectangular_unique_id_matrix(M,N):
 	#first have a 1x(M*N) array with the values
 	array = [int((i%2)*((i+1)/2)) for i in range(1,(M*N)+1)]
 	#print(array)
 	#then transform into NxM matrix
 	matrix = numpy.reshape(array,(M,N))
-	print("Rectangular Matrix\n",matrix)
+	#print("Rectangular Matrix\n",matrix)
 	#print(matrix)
 	#worth noting that an MxN rollup is also a Riley layout
 	return matrix
 
-'''an alternative construction of the layout
-creates truncated, banded matrices.
+'''an alternative construction of Riley's rectangular layouts produces truncated, banded matrices.
 
 The goal is to take this:
 [[1 0 2 0 3]
@@ -67,116 +69,76 @@ into this:
   [0  0   13  0  0]]
 
 there must be a more elegant way of doing this, but:'''
-def transposition_indices(rect_matrix):
-	
-	M,N = rect_matrix.shape
-	
+
+#This function takes a rectangular Riley matrix of any odd-integer dimensions (MxN where M,N are odd) 
+#and returns a square, truncated banded Riley matrix, as though it were rotated 45 degrees right, inner spacing zeroes dropped, and buffering zeroes on the outside added
+def rect_to_diag_clockwise(rect_matrix):
+	M,N=rect_matrix.shape
 	long_side = max(M,N)
+	flipped_rect = numpy.flip(rect_matrix,0)
 	
-	node_ids = [i for i in rect_matrix.ravel().tolist() if i!=0]
-	#print(node_ids)
+	Os=list([[i for i in flipped_rect.diagonal(idx) if i!=0] for idx in range(-long_side,long_side) if numpy.sum(flipped_rect.diagonal(idx)) != 0])
 	
-	diag_nodes = {i:[0,0] for i in node_ids}
+	O_size=P_size=len(Os)
+	#print(Os)
 	
-	#print(nodes)
+	diag_matrix=numpy.zeros((O_size,P_size),dtype="int")
 	
-	diag_index = 0
+	A_buffer = list(reversed(range(1,int((M-1)/2+1))))
+	B_buffer = list(reversed(range(1,int((N-1)/2+1))))
 	
-	diag_max = 0
+	left_buffer=A_buffer+[0]+list(reversed(B_buffer))
+	right_buffer=B_buffer+[0]+list(reversed(A_buffer))
 	
-	for index in range(-long_side,long_side):
-		
-		O = rect_matrix.diagonal(index)
-		P = numpy.flip(rect_matrix,0).diagonal(index)
-		if (O.size!=0 and numpy.sum(O)!=0) or (P.size!=0 and numpy.sum(P)!=0):
-			
-			if P.size>diag_max:
-				diag_max = P.size
-			if O.size>diag_max:
-				diag_max = O.size
-			#print(O)
-			#print(P)
-			
-			for o in O:
-				diag_nodes[o][1]=diag_index
-			for p in P:
-				diag_nodes[p][0]=diag_index
-			
-			diag_index +=1
+	#print(left_buffer)
+	#print(right_buffer)
 	
-	rect_nodes = {}
-	
-	for m in range(M):
-		for n in range(N):
-			id = rect_matrix[m][n]
-			if id !=0:
-				rect_nodes[id]=[m,n]
-	
-	RT = numpy.zeros((M,N,2),dtype=int)
-	DT = numpy.zeros((diag_index,diag_index,2),dtype=int)
-	#print(RT.shape)
-	#print(DT.shape)
-		
-	for id,coords in diag_nodes.items():
-		
-		o,p=coords
-		
-		m,n = rect_nodes[id]
-		
-		DT[o][p] = (m,n)
-	
-	for id,coords in rect_nodes.items():
-		
-		m,n=coords
-		o,p=diag_nodes[id]
-		
-		RT[m][n] = (o,p)
-	
-	#diag_matrix = diag_matrix[~(diag_matrix==0).all(1)]
-	#diag_matrix = diag_matrix[~(diag_matrix==0).all(0)]
-	
-	return RT,DT
+	row_idx=0
+	for row in Os:		
+		A=list(numpy.zeros(left_buffer[row_idx],dtype='int'))
+		B=Os[row_idx]
+		C=list(numpy.zeros(right_buffer[row_idx],dtype='int'))
+		O=A+B+C
+		diag_matrix[row_idx]=O
+		row_idx+=1
+	#print("diag_from_rect:\n",diag_matrix,"\n-------")
+	return diag_matrix
 
-#Takes an input matrix and a "transformation matrix" of the same dimension
-#which is an array of addresses from matrix AB to matrix IJ, as given in "transposition indices" function above
-#A,B is input dimensions, I,J is output dimensions
-def transform(input_matrix,transform_coords,A,B,I,J):
+#This function takes a square (OxP), truncated, banded matrix (one of Riley's diagonal matrices)
+#and returns a rectangular Riley matrix, as though it were rotated 45 degrees left with inner spacing zeroes added
+def diag_to_rect_counterclockwise(diag_matrix):
+	O,P=diag_matrix.shape
 	
-	#print(input_matrix)
-	#print(transform_coords)
-	transformed=numpy.zeros((I,J),dtype=int)
+	Ms=list(reversed([[i for i in diag_matrix.diagonal(idx) if i!=0] for idx in range(-O,O) if numpy.sum(diag_matrix.diagonal(idx)) != 0]))
+		
+	M=len(Ms)
+	N=len(Ms[0])*2-1
 	
-	for a in range(A):
-		for b in range(B):
-			v=input_matrix[a][b]
-			i,j=transform_coords[a][b]
-			transformed[i][j]=v
-	print(transformed)
-	return transformed
+	rect_matrix=numpy.zeros((M,N),dtype='int')
+	#print(rect_matrix)
+	
+	row_idx=0
+	for row in Ms:
+		
+		for col_idx in range(len(row)):
+			
+			if row_idx%2==0:
+				n=col_idx*2
+					
+				m=row_idx
+				
+				#print(row_idx,O,M,m,n)
+				
+				rect_matrix[m][n] = row[col_idx]
+				
+				col_idx+=1
+			else:
+				n=col_idx*2+1
+				m=row_idx
+				rect_matrix[m][n] = row[col_idx]
+				
+		row_idx+=1
+	
+	#print("rect from diag:\n",rect_matrix,"\n-------")
+	return rect_matrix
 
-#all-purpose node-altering function
-#alterations to be sent as 3-ples: (node_id,attribute,new_value)
-def alter_states(neighbor_dictionary,alterations):
-	for alteration in alterations:
-		node_id,attribute,new_value = alteration
-		neighbor_dictionary[node_id][attribute] = new_value
-	return neighbor_dictionary
-
-def recalculate_connectedness(neighbor_dictionary,affected_ids):
-	
-	for node_id in affected_ids:
-		
-		node = neighbor_dictionary[node_id]
-		
-		neighbor_ids = node['neighbor_ids']
-		
-		neighbor_colors = [neighbor_dictionary[id]['color'] for id in neighbor_ids if neighbor_dictionary[id]['color']!=None]
-		
-		connectedness_score = len(neighbor_colors)
-		
-		neighbor_dictionary[node_id]['connectedness_score']=connectedness_score
-	return neighbor_dictionary
-	
-	
-	
-	
