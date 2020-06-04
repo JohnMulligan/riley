@@ -5,8 +5,8 @@ from numpy.random import choice
 import time
 import math
 
-M = int(sys.argv[1])
-N = int(sys.argv[2])
+#M = int(sys.argv[1])
+#N = int(sys.argv[2])
 
 #this makes an NxM matrix of alternating zeroes and ones
 def make_rect_checkerboard(M,N):
