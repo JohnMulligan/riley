@@ -24,11 +24,12 @@ It can perform two specific but crucial transformations.<br/>
 Riley's canvases as represented in the checkerboard format are inner-sparse -- zeroes every other item.<br/>
 But these have corresponding, square, truncated-banded matrices that are outer-sparse -- triangular buffers of zeroes around a central band.<br/>
 I therefore have 2 functions that transform: rectangular to diagonal, and diagonal to rectangular -- 45 degrees only, don't quite have the full range of motion yet.<br/>
-	##NOTE: THESE TRANSFORMATION FUNCTIONS ONLY WORK WITH ZEROES FOR NULL ENTRIES AND NULL ENTRIES ONLY.
-	##A ZERO IN WHAT SHOULD BE A NON-NULL ENTRY GIVEN HER LAYOUTS IS LIKELY TO BREAK IT.
-	###So for instance in a 3-color canvas I used 4 color values (1=purple, 2=green, 3=salmon, and 4=white) even though I had a white background.
-	###In other words, despite the white circles being indistinguishable from the white canvas, null entries were 0 and white entries were 4
-<br> 
+
+NOTE: THESE TRANSFORMATION FUNCTIONS ONLY WORK WITH ZEROES FOR NULL ENTRIES AND NULL ENTRIES ONLY.<br/>
+A ZERO IN WHAT SHOULD BE A NON-NULL ENTRY GIVEN HER LAYOUTS IS LIKELY TO BREAK IT.<br/>
+So for instance in a 3-color canvas I used 4 color values (1=purple, 2=green, 3=salmon, and 4=white) even though I had a white background.<br/>
+In other words, despite the white circles being indistinguishable from the white canvas, null entries were 0 and white entries were 4
+
 	1) Inner-sparse "rectangular" matrix to outer-sparse square "diagonal" matrix by ... sort of ... rotating them clockwise 45 degrees
 	rect_to_diag_clockwise(rect_matrix)
 	Will take this Rectangular Matrix:
@@ -105,13 +106,15 @@ It generates 2 html files (diagonal and rectangular matrices) with fabric.js int
 
 It generates 2 png files (diag & rect) *for every iteration*.
 
-So:
-	python3 demo_painter.py 5 7 3
+So:<br/>
+python3 demo_painter.py 5 7 3<br/>
+
 Generates:
-	5x7 random-colored rectangular Riley matrix
-	6x6 corresponding banded Riley matrix
-	1 txt file
-	2 html files
-	6 png files
+	
+	5x7 random-colored rectangular Riley matrix<br/>
+	6x6 corresponding banded Riley matrix<br/>
+	1 txt file<br/>
+	2 html files<br/>
+	6 png files<br/>
 
 
