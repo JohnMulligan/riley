@@ -76,8 +76,8 @@ c. basic layout information:<br/>
 
 
 
-Use OpenCV to create png's out of the matrix:<br/>
-visualizers.opencv(matrix,fname,l,r,color_dict)
+Use PIL to create png's out of the matrix:<br/>
+visualizers.pillow(matrix,fname,l,r,color_dict)
 
 Use Fabric.js to create (minimally for now) interactive html files with fabric.js<br/>
 visualizers.fabricjs(matrix,fname,l,r,color_dict)
