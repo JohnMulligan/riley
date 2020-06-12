@@ -8,7 +8,7 @@ import messengers
 #This script demonstrates usage of
 ###messengers.py (which handles matrix generation and transformation) with
 ###visualizers.py (which can currently generate visualizations in 3 formats:
-#####text printouts of matrices, opencv-generated png's, and .html files with fabric.js interactivity
+#####text printouts of matrices, pillow-generated png's, and .html files with fabric.js interactivity
 
 #Currently, I've hard-coded in:
 ##The color palette and relative probability for each color
@@ -76,8 +76,8 @@ for i in range(iterations):
 	diag_color_matrix=messengers.rect_to_diag_clockwise(rect_color_matrix)
 	print(diag_color_matrix)
 		
-	visualizers.opencv(rect_color_matrix,'sample_%d_rect.png'%i,rect_L,r,color_dict)
-	visualizers.opencv(diag_color_matrix,'sample_%d_diag.png'%i,diag_L,r,color_dict)
+	visualizers.pillow(rect_color_matrix,'sample_%d_rect.png'%i,rect_L,r,color_dict)
+	visualizers.pillow(diag_color_matrix,'sample_%d_diag.png'%i,diag_L,r,color_dict)
 
 visualizers.fabricjs(rect_color_matrix,'sample_rect.html',rect_L,r,color_dict)
 visualizers.fabricjs(diag_color_matrix,'sample_diag.html',diag_L,r,color_dict)

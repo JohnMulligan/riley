@@ -2,8 +2,7 @@ import sys
 import numpy
 import random
 from numpy.random import choice
-import cv2
-import time
+from PIL import Image,ImageDraw
 import re
 import math
 import messengers
@@ -19,24 +18,30 @@ import messengers
 ###in other words those coordinates may be getting rendered in different ways but still spitting out similar-looking colors!
 
 
-def opencv(matrix,fname,l,r,color_dict):
+def pillow(matrix,fname,l,r,color_dict):
 	M,N=matrix.shape
 	#derive the canvas size from our item layout
 	#drawing a diagonal matrix, the circles have overlaps
 	##I like that -- it shows the white circles as subtractions
 	W=int(l*(N-1))+2*r
 	H=int(l*(M-1))+2*r
-	img=numpy.full((H,W,3),(255,255,255),numpy.uint8)
+	
+	#fig,ax = plt.subplots()
+	
+	
+	img=Image.new('RGB', (W,H),(255,255,255))
+	draw=ImageDraw.Draw(img)
 	for m in range(M):
 		for n in range(N):
 			v=matrix[m][n]
 			if v!=0:
 				x=int(n*l+r)
 				y=int(m*l+r)
-				R,G,B=color_dict[v][0]
-				color=(B,G,R)
-				img=cv2.circle(img,(x,y),r,color,-1)
-	cv2.imwrite(fname,img)				
+				R,G,B=[i for i in color_dict[v][0]]
+				color = (R,G,B)
+				draw.ellipse((x-r,y-r,x+r,y+r),fill=color)
+				
+	img.save(fname)
 
 
 #creates a fabric.js interactive html file
