@@ -104,6 +104,44 @@ def rect_to_diag_clockwise(rect_matrix):
 	#print("diag_from_rect:\n",diag_matrix,"\n-------")
 	return diag_matrix
 
+def diag_to_rect_clockwise(diag_matrix):
+	O,P=diag_matrix.shape
+	
+	
+	flipped_diag = numpy.flip(diag_matrix,axis=0)
+		
+	Ms=list([[i for i in flipped_diag.diagonal(idx) if i!=0] for idx in range(-O,O) if numpy.sum(flipped_diag.diagonal(idx)) != 0])
+	M = len(Ms)
+	N = len(Ms[0])*2-1
+	
+	rect_matrix=numpy.zeros((M,N),dtype='int')
+	#print(rect_matrix)
+	
+	row_idx=0
+	for row in Ms:
+		for col_idx in range(len(row)):
+			
+			if row_idx%2==0:
+				n=col_idx*2
+					
+				m=row_idx
+				
+				#print(row_idx,O,M,m,n)
+				
+				rect_matrix[m][n] = row[col_idx]
+				
+				col_idx+=1
+			else:
+				n=col_idx*2+1
+				m=row_idx
+				rect_matrix[m][n] = row[col_idx]
+				
+		row_idx+=1
+	
+	#print("rect from diag:\n",rect_matrix,"\n-------")
+	return rect_matrix
+
+
 #This function takes a square (OxP), truncated, banded matrix (one of Riley's diagonal matrices)
 #and returns a rectangular Riley matrix, as though it were rotated 45 degrees left with inner spacing zeroes added
 def diag_to_rect_counterclockwise(diag_matrix):

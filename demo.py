@@ -75,9 +75,10 @@ for i in range(iterations):
 	#fetch diagonal counterpart of this randomly-colored matrix
 	diag_color_matrix=messengers.rect_to_diag_clockwise(rect_color_matrix)
 	print(diag_color_matrix)
-	
+		
 	visualizers.opencv(rect_color_matrix,'sample_%d_rect.png'%i,rect_L,r,color_dict)
 	visualizers.opencv(diag_color_matrix,'sample_%d_diag.png'%i,diag_L,r,color_dict)
+
 visualizers.fabricjs(rect_color_matrix,'sample_rect.html',rect_L,r,color_dict)
 visualizers.fabricjs(diag_color_matrix,'sample_diag.html',diag_L,r,color_dict)
 visualizers.text([diag_color_matrix,rect_color_matrix])
