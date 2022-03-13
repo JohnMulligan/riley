@@ -150,9 +150,9 @@ print(	" --v-v-v-vvv-v-v-v--\n",
 pp.pprint(Cformulas)
 
 
-print("-----------")
-print("occurrence of unique vars in each cell:")
-print("-----------")
+#print("-----------")
+#print("occurrence of unique vars in each cell:")
+#print("-----------")
 
 Cvardict={}
 for i in Cformulas:
@@ -166,7 +166,8 @@ for i in Cformulas:
 			else:
 				Cvardict[Caddress][var]+=1
 			
-pp.pprint(Cvardict)
+#pp.pprint(Cvardict)
+
 
 
 
@@ -220,7 +221,7 @@ def rect_to_diag_clockwise(rect_matrix):
 		row_idx+=1
 	#print("diag_from_rect:\n",diag_matrix,"\n-------")
 	
-	print("///",diag_matrix)
+	#print("///",diag_matrix)
 	
 	final_matrix=[]
 	c=1
@@ -231,13 +232,13 @@ def rect_to_diag_clockwise(rect_matrix):
 			J.append(v)
 		final_matrix.append(J)
 	
-	print("--->",final_matrix)
+	#print("--->",final_matrix)
 	
 	return final_matrix
 
 squaremap=rect_to_diag_clockwise(A)
 
-pp.pprint(squaremap)
+#pp.pprint(squaremap)
 
 Cmapped=[]
 Cmappeddict={}
@@ -252,9 +253,12 @@ for i in range(sd):
 		J.append(mappedA)
 	Cmapped.append(J)
 
-print(Cmappeddict)
+#print(Cmappeddict)
 
 
 
+for i in range(sd):
+	for j in range(sd):
+		print (C[i][j],"=",Cmapped[i][j],"=",Cformulas[i][j])
 
 
