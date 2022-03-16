@@ -34,8 +34,11 @@ def array_permutations(m, n):
 
 T=array_permutations(5,4)
 
+print(len(T))
+
 U=array_permutations(4,3)
 
+print(len(U))
 
 TU=product(T,U)
 
